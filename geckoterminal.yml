@@ -39,6 +39,18 @@ paths:
             multiple values:
               value: >-
                 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2,0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48
+        - name: include_market_cap
+          in: query
+          description: include market cap, default false
+          required: false
+          schema:
+            type: boolean
+        - name: include_24hr_vol
+          in: query
+          description: include 24 hours volume, default false
+          required: false
+          schema:
+            type: boolean
       responses:
         '200':
           description: Get current USD prices of multiple tokens on a network
@@ -1042,7 +1054,11 @@ components:
           type: simple_token_price
           attributes:
             token_prices:
-              '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2': '3639.78228844745'
+              '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2': '3399.24368371279'
+            market_cap_usd:
+              '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2': '10005535878.50094'
+            h24_volume_usd:
+              '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2': '2544539948.02599'
     NetworksList:
       type: object
       properties:
