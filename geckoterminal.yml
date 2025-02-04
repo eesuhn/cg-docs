@@ -870,18 +870,19 @@ paths:
           required: false
           description: >-
             return ohlcv for token  <br> use this to invert the chart <br>
-            Available values: 'base', 'quote' or token address
+            Available values: 'base', 'quote' or token address <br>
+            Default value: 'quote'
           schema:
             type: string
           examples:
-            base:
-              value: base
             quote:
               value: quote
-            base_token_address:
-              value: '0xdac17f958d2ee523a2206206994597c13d831ec7'
+            base:
+              value: base
             quote_token_address:
               value: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
+            base_token_address:
+              value: '0xdac17f958d2ee523a2206206994597c13d831ec7'
       responses:
         '200':
           description: Get OHLCV data of a pool
