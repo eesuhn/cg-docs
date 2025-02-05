@@ -116,7 +116,6 @@ paths:
           content:
             application/json:
               schema:
-                type: object
                 $ref: '#/components/schemas/SimplePrice'
   /simple/token_price/{id}:
     get:
@@ -217,7 +216,6 @@ paths:
           content:
             application/json:
               schema:
-                type: object
                 $ref: '#/components/schemas/SimpleTokenPrice'
   /simple/supported_vs_currencies:
     get:
