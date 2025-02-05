@@ -8020,6 +8020,9 @@ components:
         native_currency_symbol:
           type: string
           description: nft collection native currency symbol
+        market_cap_rank:
+          type: number
+          description: coin market cap rank
         floor_price:
           type: object
           description: nft collection floor price
@@ -8303,6 +8306,9 @@ components:
           native_currency_symbol:
             type: string
             description: nft collection native currency symbol
+          market_cap_rank:
+            type: number
+            description: coin market cap rank
           floor_price:
             type: object
             description: nft collection floor price
