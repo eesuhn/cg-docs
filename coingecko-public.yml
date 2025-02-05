@@ -7374,6 +7374,7 @@ components:
           different hand-drawn traits.
         native_currency: ethereum
         native_currency_symbol: ETH
+        market_cap_rank: 3
         floor_price:
           native_currency: 12.5
           usd: 42317
