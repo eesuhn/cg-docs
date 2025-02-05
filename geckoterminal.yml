@@ -138,7 +138,9 @@ paths:
         - name: page
           in: query
           required: false
-          description: 'page through results <br>More than 10 pages is only available to Analyst plan or above <br>Default value: 1'
+          description: >-
+            page through results <br>
+            Default value: 1
           schema:
             type: integer
         - name: duration
@@ -192,7 +194,9 @@ paths:
         - name: page
           in: query
           required: false
-          description: 'page through results <br>More than 10 pages is only available to Analyst plan or above <br>Default value: 1'
+          description: >-
+            page through results <br>
+            Default value: 1
           schema:
             type: integer
         - name: duration
@@ -341,7 +345,9 @@ paths:
         - name: page
           in: query
           required: false
-          description: 'page through results <br>More than 10 pages is only available to Analyst plan or above <br>Default value: 1'
+          description: >-
+            page through results <br>
+            Default value: 1
           schema:
             type: integer
         - name: sort
@@ -402,7 +408,9 @@ paths:
         - name: page
           in: query
           required: false
-          description: 'page through results <br>More than 10 pages is only available to Analyst plan or above <br>Default value: 1'
+          description: >-
+            page through results <br>
+            Default value: 1
           schema:
             type: integer
         - name: sort
@@ -454,7 +462,9 @@ paths:
         - name: page
           in: query
           required: false
-          description: 'page through results <br>More than 10 pages is only available to Analyst plan or above <br>Default value: 1'
+          description: >-
+            page through results <br>
+            Default value: 1
           schema:
             type: integer
       responses:
@@ -490,7 +500,9 @@ paths:
         - name: page
           in: query
           required: false
-          description: 'page through results <br>More than 10 pages is only available to Analyst plan or above <br>Default value: 1'
+          description: >-
+            page through results <br>
+            Default value: 1
           schema:
             type: integer
       responses:
@@ -536,7 +548,9 @@ paths:
         - name: page
           in: query
           required: false
-          description: 'page through results <br>More than 10 pages is only available to Analyst plan or above <br>Default value: 1'
+          description: >-
+            page through results <br>
+            Default value: 1
           schema:
             type: integer
       responses:
@@ -586,7 +600,9 @@ paths:
         - name: page
           in: query
           required: false
-          description: 'page through results <br>More than 10 pages is only available to Analyst plan or above <br>Default value: 1'
+          description: >-
+            page through results <br>
+            Default value: 1
           schema:
             type: integer
         - name: sort
