@@ -920,6 +920,25 @@ paths:
             Default value: 0
           schema:
             type: number
+        - name: token
+          in: query
+          required: false
+          description: >-
+            return trades for token <br>
+            use this to invert the chart <br>
+            Available values: 'base', 'quote' or token address <br>
+            Default value: 'base'
+          schema:
+            type: string
+          examples:
+            base:
+              value: base
+            quote:
+              value: quote
+            base_token_address:
+              value: '0xdac17f958d2ee523a2206206994597c13d831ec7'
+            quote_token_address:
+              value: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
       responses:
         '200':
           description: Get last 300 trades in past 24 hours from a pool
