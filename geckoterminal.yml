@@ -39,6 +39,18 @@ paths:
             multiple values:
               value: >-
                 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2,0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48
+        - name: include_market_cap
+          in: query
+          description: 'include market capitalization, default: false'
+          required: false
+          schema:
+            type: boolean
+        - name: include_24hr_vol
+          in: query
+          description: 'include 24hr volume, default: false'
+          required: false
+          schema:
+            type: boolean
       responses:
         '200':
           description: Get current USD prices of multiple tokens on a network
@@ -126,10 +138,11 @@ paths:
         - name: page
           in: query
           required: false
-          description: 'page through results, maximum 10 pages  <br> Default value: 1'
+          description: >-
+            page through results <br>
+            Default value: 1
           schema:
             type: integer
-            maximum: 10
         - name: duration
           in: query
           required: false
@@ -181,10 +194,11 @@ paths:
         - name: page
           in: query
           required: false
-          description: 'page through results, maximum 10 pages <br> Default value: 1'
+          description: >-
+            page through results <br>
+            Default value: 1
           schema:
             type: integer
-            maximum: 10
         - name: duration
           in: query
           required: false
@@ -331,7 +345,9 @@ paths:
         - name: page
           in: query
           required: false
-          description: 'page through results, maximum 10 pages <br> Default value: 1'
+          description: >-
+            page through results <br>
+            Default value: 1
           schema:
             type: integer
         - name: sort
@@ -392,7 +408,9 @@ paths:
         - name: page
           in: query
           required: false
-          description: 'page through results, maximum 10 pages <br> Default value: 1'
+          description: >-
+            page through results <br>
+            Default value: 1
           schema:
             type: integer
         - name: sort
@@ -444,7 +462,9 @@ paths:
         - name: page
           in: query
           required: false
-          description: 'page through results, maximum 10 pages <br> Default value: 1'
+          description: >-
+            page through results <br>
+            Default value: 1
           schema:
             type: integer
       responses:
@@ -480,7 +500,9 @@ paths:
         - name: page
           in: query
           required: false
-          description: 'page through results, maximum 10 pages <br> Default value: 1'
+          description: >-
+            page through results <br>
+            Default value: 1
           schema:
             type: integer
       responses:
@@ -526,7 +548,9 @@ paths:
         - name: page
           in: query
           required: false
-          description: 'page through results, maximum 10 pages <br> Default value: 1'
+          description: >-
+            page through results <br>
+            Default value: 1
           schema:
             type: integer
       responses:
@@ -576,7 +600,9 @@ paths:
         - name: page
           in: query
           required: false
-          description: 'page through results, maximum 10 pages <br> Default value: 1'
+          description: >-
+            page through results <br>
+            Default value: 1
           schema:
             type: integer
         - name: sort
@@ -858,7 +884,8 @@ paths:
           required: false
           description: >-
             return ohlcv for token  <br> use this to invert the chart <br>
-            Available values: 'base', 'quote' or token address
+            Available values: 'base', 'quote' or token address <br>
+            Default value: 'base'
           schema:
             type: string
           examples:
@@ -909,6 +936,25 @@ paths:
             Default value: 0
           schema:
             type: number
+        - name: token
+          in: query
+          required: false
+          description: >-
+            return trades for token <br>
+            use this to invert the chart <br>
+            Available values: 'base', 'quote' or token address <br>
+            Default value: 'base'
+          schema:
+            type: string
+          examples:
+            base:
+              value: base
+            quote:
+              value: quote
+            base_token_address:
+              value: '0xdac17f958d2ee523a2206206994597c13d831ec7'
+            quote_token_address:
+              value: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
       responses:
         '200':
           description: Get last 300 trades in past 24 hours from a pool
@@ -1042,7 +1088,11 @@ components:
           type: simple_token_price
           attributes:
             token_prices:
-              '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2': '3639.78228844745'
+              '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2': '3399.24368371279'
+            market_cap_usd:
+              '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2': '10005535878.50094'
+            h24_volume_usd:
+              '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2': '2544539948.02599'
     NetworksList:
       type: object
       properties:
