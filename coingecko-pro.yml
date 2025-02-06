@@ -1665,6 +1665,7 @@ paths:
               - trust_score_asc
               - volume_desc
               - volume_asc
+              - base_target
       responses:
         '200':
           description: Get exchange tickers
