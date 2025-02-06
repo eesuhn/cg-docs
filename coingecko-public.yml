@@ -62,7 +62,7 @@ paths:
               value: usd,eur
         - name: include_market_cap
           in: query
-          description: 'include market cap, default: false '
+          description: 'include market capitalization, default: false'
           required: false
           schema:
             type: boolean
