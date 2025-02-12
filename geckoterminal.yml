@@ -28,8 +28,7 @@ paths:
         - name: addresses
           in: path
           description: >-
-            token contract address, comma-separated if more than one token
-            contract address,100 addresses
+            token contract address, comma-separated if more than one token contract address
           required: true
           schema:
             type: string
