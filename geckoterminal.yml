@@ -281,8 +281,7 @@ paths:
         - name: addresses
           in: path
           description: >-
-            pool contract address, comma-separated if more than one pool
-            contract address, maximum 30 addresses
+            pool contract address, comma-separated if more than one pool contract address
           required: true
           schema:
             type: string
