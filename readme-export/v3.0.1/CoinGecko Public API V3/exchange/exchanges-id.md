@@ -1,0 +1,14 @@
+---
+title: "Exchange Data by ID"
+slug: "exchanges-id"
+excerpt: "This endpoint allows you to **query exchange’s data (name, year established, country, ...), exchange volume in BTC and top 100 tickers based on exchange’s ID**"
+hidden: false
+createdAt: "Sun Feb 04 2024 14:18:21 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Wed Feb 26 2025 13:54:48 GMT+0000 (Coordinated Universal Time)"
+---
+> 📘 **Notes**
+> 
+> - The exchange volume in the response is provided in BTC. To convert it to other currencies, please use [/exchange_rates](/reference/exchange-rates) endpoint.
+> - For derivatives (e.g. bitmex, binance_futures), to get derivatives exchanges data, please go to [/derivatives/exchange/{id}](/reference/derivatives-exchanges-id) endpoint.
+> - Tickers are limited to 100 items, to get more tickers, please go to [/exchanges/{id}/tickers](/reference/exchanges-id-tickers) endpoint.
+> - Cache / Update Frequency: every 60 seconds for all the API plans.
