@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: On Chain DEX API (Beta)
+  title: On-Chain DEX API (Beta)
   version: v2-beta
 servers:
   - url: https://pro-api.coingecko.com/api/v3/onchain
@@ -14,8 +14,7 @@ paths:
       tags:
         - Simple
       description: >-
-        This endpoint allows you to **get token price based on the provided
-        token contract address on a network**
+        This endpoint allows you to **get token price based on the provided token contract address on a network**
       operationId: onchain-simple-price
       parameters:
         - name: network
@@ -1002,9 +1001,7 @@ paths:
       tags:
         - Tokens
       description: >-
-        This endpoint allows you to **query specific token info such as
-        name,symbol, CoinGecko ID etc. based on provided token contract address
-        on a network**
+        This endpoint allows you to **query specific token info such as name, symbol, CoinGecko ID etc. based on provided token contract address on a network**
       operationId: token-info-contract-address
       parameters:
         - name: network
