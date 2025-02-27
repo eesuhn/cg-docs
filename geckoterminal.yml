@@ -1319,6 +1319,7 @@ paths:
           description: category ID
           schema:
             type: string
+            example: pump-fun
         - name: include
           in: query
           required: false
