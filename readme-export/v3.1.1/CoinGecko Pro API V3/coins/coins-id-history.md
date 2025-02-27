@@ -4,7 +4,7 @@ slug: "coins-id-history"
 excerpt: "This endpoint allows you to **query the historical data (price, market cap, 24hrs volume, ...) at a given date for a coin based on a particular coin ID**"
 hidden: false
 createdAt: "Wed Jan 31 2024 03:32:31 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Feb 26 2025 13:41:08 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Feb 27 2025 18:56:44 GMT+0000 (Coordinated Universal Time)"
 ---
 > 👍 **Tips**
 > 

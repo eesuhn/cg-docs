@@ -1,10 +1,10 @@
 ---
 title: "Exchanges List with data"
 slug: "exchanges"
-excerpt: "This endpoint allows you to **query all the supported exchanges with exchanges’ data (id, name, country, ...) that have active trading volumes on CoinGecko**"
+excerpt: "This endpoint allows you to **query all the supported exchanges with exchanges’ data (ID, name, country, ...) that have active trading volumes on CoinGecko**"
 hidden: false
 createdAt: "Sun Feb 04 2024 14:18:21 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Feb 26 2025 13:54:05 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Feb 27 2025 18:35:29 GMT+0000 (Coordinated Universal Time)"
 ---
 > 👍 **Tips**
 > 

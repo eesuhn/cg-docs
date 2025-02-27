@@ -1,10 +1,10 @@
 ---
 title: "Coin Historical Chart Data within Time Range by Token Address"
 slug: "contract-address-market-chart-range"
-excerpt: "This endpoint allows you to **get the historical chart data within certain time range in UNIX along with price, market cap and 24hrs volume  based on asset platform and particular token contract address**"
+excerpt: "This endpoint allows you to **get the historical chart data within certain time range in UNIX along with price, market cap and 24hr volume based on asset platform and particular token contract address**"
 hidden: false
 createdAt: "Thu Feb 01 2024 08:49:51 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Feb 26 2025 13:41:40 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Feb 27 2025 18:34:26 GMT+0000 (Coordinated Universal Time)"
 ---
 > 👍 **Tips**
 > 

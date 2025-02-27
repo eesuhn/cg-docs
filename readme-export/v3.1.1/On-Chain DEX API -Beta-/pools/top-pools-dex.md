@@ -4,7 +4,7 @@ slug: "top-pools-dex"
 excerpt: "This endpoint allows you to **query all the top pools based on the provided network and decentralized exchange (DEX)**"
 hidden: false
 createdAt: "Wed Jan 31 2024 03:32:40 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Feb 26 2025 14:00:47 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Feb 27 2025 18:35:13 GMT+0000 (Coordinated Universal Time)"
 ---
 > 👍 **Tips**
 > 

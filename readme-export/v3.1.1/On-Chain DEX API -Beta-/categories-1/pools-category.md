@@ -4,7 +4,7 @@ slug: "pools-category"
 excerpt: "This endpoint allows you to **query all the pools based on the provided category ID**"
 hidden: false
 createdAt: "Tue Dec 24 2024 04:33:21 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Feb 26 2025 14:03:58 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Feb 27 2025 18:35:14 GMT+0000 (Coordinated Universal Time)"
 ---
 > 👍 **Tips**
 > 
