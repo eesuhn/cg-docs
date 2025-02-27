@@ -46,8 +46,7 @@ paths:
         - Simple
       summary: Coin Price by IDs
       description: >-
-        This endpoint allows you to **query the prices of one or more coins by
-        using their unique Coin API IDs**
+        This endpoint allows you to **query the prices of one or more coins by using their unique Coin API IDs**
       operationId: simple-price
       parameters:
         - name: ids
@@ -659,9 +658,7 @@ paths:
         - Coins
       summary: Coin Historical Data by ID
       description: >-
-        This endpoint allows you to **query the historical data (price, market
-        cap, 24hr volume, etc) at a given date for a coin based on a particular
-        coin ID**
+        This endpoint allows you to **query the historical data (price, market cap, 24hrs volume, ...) at a given date for a coin based on a particular coin ID**
       operationId: coins-id-history
       parameters:
         - name: id
@@ -1524,8 +1521,7 @@ paths:
         - Categories
       summary: Coins Categories List with Market Data
       description: >-
-        This endpoint allows you to **query all the coins categories with market
-        data (market cap, volume, etc.) on CoinGecko**
+        This endpoint allows you to **query all the coins categories with market data (market cap, volume, ...) on CoinGecko**
       operationId: coins-categories
       parameters:
         - name: order
@@ -2270,9 +2266,7 @@ paths:
         - Global
       summary: Global De-Fi Market Data
       description: >-
-        This endpoint allows you **query top 100 cryptocurrency global
-        decentralized finance (defi) data including defi market cap, trading
-        volume**
+        This endpoint allows you **query top 100 cryptocurrency global decentralized finance (DeFi) data including DeFi market cap, trading volume**
       operationId: global-DeFi
       responses:
         '200':
@@ -2330,8 +2324,7 @@ paths:
         - Companies (Beta)
       summary: Public Companies Holdings
       description: >-
-        This endpoint allows you **query public companies’ bitcoin or ethereum
-        holdings**
+        This endpoint allows you **query public companies’ Bitcoin or Ethereum holdings**
       operationId: companies-public-treasury
       parameters:
         - name: coin_id
