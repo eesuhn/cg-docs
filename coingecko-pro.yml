@@ -53,7 +53,7 @@ paths:
         - name: ids
           in: query
           description: >-
-            coins' ids, comma-separated if querying more than 1 coin. 
+            coins' ids, comma-separated if querying more than 1 coin.
             <br>*refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
@@ -1995,7 +1995,7 @@ paths:
           description: >-
             filter result by asset platform (blockchain network)  <br> *refers
             to [`/asset_platforms`](/reference/asset-platforms-list)
-            filter=`nft` 
+            filter=`nft`
           required: false
           schema:
             type: string
@@ -2263,7 +2263,7 @@ paths:
           in: query
           description: >-
             target currency of market cap, default: usd <br> *refers to
-            [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies) 
+            [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies)
           required: false
           schema:
             type: string

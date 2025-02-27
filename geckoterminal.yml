@@ -126,7 +126,7 @@ paths:
           description: >-
             attributes to include, comma-separated if more than one to include
             <br> Available values: `base_token`, `quote_token`, `dex`,
-            `network`.  <br> Example: `base_token` or `base_token,dex` 
+            `network`.  <br> Example: `base_token` or `base_token,dex`
           schema:
             type: string
           examples:
@@ -1047,7 +1047,7 @@ paths:
           in: query
           description: >-
             Filter tokens by provided network  <br> *refers to
-            [/networks](/reference/networks-list) 
+            [/networks](/reference/networks-list)
           required: false
           schema:
             type: string
@@ -1274,7 +1274,7 @@ paths:
           description: >-
             attributes to include, comma-separated if more than one to include
             <br> Available values: `base_token`, `quote_token`, `dex`,
-            `network`.  <br> Example: `base_token` or `base_token,dex` 
+            `network`.  <br> Example: `base_token` or `base_token,dex`
           schema:
             type: string
         - name: page

@@ -36,7 +36,7 @@ paths:
         - name: ids
           in: query
           description: >-
-            coins' ids, comma-separated if querying more than 1 coin. 
+            coins' ids, comma-separated if querying more than 1 coin.
             <br>*refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
