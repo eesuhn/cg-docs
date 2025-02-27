@@ -53,7 +53,7 @@ paths:
         - name: ids
           in: query
           description: >-
-            coins' ids, comma-separated if querying more than 1 coin.
+            coins' IDs, comma-separated if querying more than 1 coin.
             <br>*refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
@@ -147,7 +147,7 @@ paths:
         - name: id
           in: path
           description: >-
-            asset platform's id  <br>*refers to
+            asset platform's ID  <br>*refers to
             [`/asset_platforms`](/reference/asset-platforms-list).
           required: true
           schema:
@@ -262,7 +262,7 @@ paths:
       summary: Coins List (ID Map)
       description: >-
         This endpoint allows you to **query all the supported coins on CoinGecko
-        with coins id, name and symbol**
+        with coins ID, name and symbol**
       operationId: coins-list
       parameters:
         - name: include_platform
@@ -282,7 +282,7 @@ paths:
               - inactive
       responses:
         '200':
-          description: List all coins with id, name, and symbol
+          description: List all coins with ID, name, and symbol
           content:
             application/json:
               schema:
@@ -379,7 +379,7 @@ paths:
         - name: ids
           in: query
           description: >-
-            coins' ids, comma-separated if querying more than 1 coin.  <br>
+            coins' IDs, comma-separated if querying more than 1 coin.  <br>
             *refers to [`/coins/list`](/reference/coins-list).
           required: false
           schema:
@@ -526,12 +526,12 @@ paths:
       description: >-
         This endpoint allows you to **query all the coin data of a coin (name,
         price, market .... including exchange tickers) on CoinGecko coin page
-        based on a particular coin id**
+        based on a particular coin ID**
       operationId: coins-id
       parameters:
         - name: id
           in: path
-          description: coin id <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -586,13 +586,13 @@ paths:
       summary: Coin Tickers by ID
       description: >-
         This endpoint allows you to **query the coin tickers on both centralized
-        exchange (cex) and decentralized exchange (dex) based on a particular
-        coin id**
+        exchange (CEX) and decentralized exchange (DEX) based on a particular
+        coin ID**
       operationId: coins-id-tickers
       parameters:
         - name: id
           in: path
-          description: coin id <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -600,7 +600,7 @@ paths:
         - name: exchange_ids
           in: query
           description: >-
-            exchange id <br> *refers to
+            exchange ID <br> *refers to
             [`/exchanges/list`](/reference/exchanges-list).
           required: false
           schema:
@@ -652,12 +652,12 @@ paths:
       description: >-
         This endpoint allows you to **query the historical data (price, market
         cap, 24hrs volume, etc) at a given date for a coin based on a particular
-        coin id**
+        coin ID**
       operationId: coins-id-history
       parameters:
         - name: id
           in: path
-          description: coin id <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -692,12 +692,12 @@ paths:
       description: >-
         This endpoint allows you to **get the historical chart data of a coin
         including time in UNIX, price, market cap and 24hrs volume based on
-        particular coin id**
+        particular coin ID**
       operationId: coins-id-market-chart
       parameters:
         - name: id
           in: path
-          description: coin id <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -778,12 +778,12 @@ paths:
       description: >-
         This endpoint allows you to **get the historical chart data of a coin
         within certain time range in UNIX along with price, market cap and 24hrs
-        volume based on particular coin id**
+        volume based on particular coin ID**
       operationId: coins-id-market-chart-range
       parameters:
         - name: id
           in: path
-          description: coin id <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -864,12 +864,12 @@ paths:
       summary: Coin OHLC Chart by ID
       description: >-
         This endpoint allows you to **get the OHLC chart (Open, High, Low,
-        Close) of a coin based on particular coin id**
+        Close) of a coin based on particular coin ID**
       operationId: coins-id-ohlc
       parameters:
         - name: id
           in: path
-          description: coin id <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -949,12 +949,12 @@ paths:
       description: >-
         This endpoint allows you to **get the OHLC chart (Open, High, Low,
         Close) of a coin within a range of timestamp based on particular coin
-        id**
+        ID**
       operationId: coins-id-ohlc-range
       parameters:
         - name: id
           in: path
-          description: coin id <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -1012,7 +1012,7 @@ paths:
         - name: id
           in: path
           description: >-
-            asset platform id <br> *refers to
+            asset platform ID <br> *refers to
             [`/asset_platforms`](/reference/asset-platforms-list).
           required: true
           schema:
@@ -1046,7 +1046,7 @@ paths:
         - name: id
           in: path
           description: >-
-            asset platform id <br> *refers to
+            asset platform ID <br> *refers to
             [`/asset_platforms`](/reference/asset-platforms-list).
           required: true
           schema:
@@ -1139,7 +1139,7 @@ paths:
         - name: id
           in: path
           description: >-
-            asset platform id <br> *refers to
+            asset platform ID <br> *refers to
             [`/asset_platforms`](/reference/asset-platforms-list)
           required: true
           schema:
@@ -1226,12 +1226,12 @@ paths:
       summary: 👑 Circulating Supply Chart by ID
       description: >-
         This endpoint allows you to **query historical circulating supply of a
-        coin by number of days away from now based on provided coin id**
+        coin by number of days away from now based on provided coin ID**
       operationId: coins-id-circulating-supply-chart
       parameters:
         - name: id
           in: path
-          description: coin id <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -1281,12 +1281,12 @@ paths:
       summary: 👑 Circulating Supply chart within Time Range by ID
       description: >-
         This endpoint allows you to **query historical circulating supply of a
-        coin, within a range of timestamp based on the provided coin id**
+        coin, within a range of timestamp based on the provided coin ID**
       operationId: coins-id-circulating-supply-chart-range
       parameters:
         - name: id
           in: path
-          description: coin id <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -1327,12 +1327,12 @@ paths:
       summary: 👑 Total Supply Chart by ID
       description: >-
         This endpoint allows you to **query historical total supply of a coin by
-        number of days away from now based on provided coin id**
+        number of days away from now based on provided coin ID**
       operationId: coins-id-total-supply-chart
       parameters:
         - name: id
           in: path
-          description: coin id  <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: coin ID  <br> *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -1382,12 +1382,12 @@ paths:
       summary: 👑 Total Supply chart within time range by ID
       description: >-
         This endpoint allows you to **query historical total supply of a coin,
-        within a range of timestamp based on the provided coin id**
+        within a range of timestamp based on the provided coin ID**
       operationId: coins-id-total-supply-chart-range
       parameters:
         - name: id
           in: path
-          description: coin id  <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: coin ID  <br> *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -1460,7 +1460,7 @@ paths:
         - name: asset_platform_id
           in: path
           description: >-
-            asset platform id <br> *refers to
+            asset platform ID <br> *refers to
             [`/asset_platforms`](/reference/asset-platforms-list)
           required: true
           schema:
@@ -1468,7 +1468,7 @@ paths:
             example: ethereum
       responses:
         '200':
-          description: List all tokens on CoinGecko based on asset platform id
+          description: List all tokens on CoinGecko based on asset platform ID
           content:
             application/json:
               schema:
@@ -1526,7 +1526,7 @@ paths:
       summary: Exchanges List with data
       description: >-
         This endpoint allows you to **query all the supported exchanges with
-        exchanges’ data (id, name, country, .... etc) that have active trading
+        exchanges’ data (ID, name, country, .... etc) that have active trading
         volumes on CoinGecko**
       operationId: exchanges
       parameters:
@@ -1555,7 +1555,7 @@ paths:
         - Exchanges
       summary: Exchanges List (ID Map)
       description: >-
-        This endpoint allows you to **query all the exchanges with id and
+        This endpoint allows you to **query all the exchanges with ID and
         name**
       operationId: exchanges-list
       parameters:
@@ -1570,7 +1570,7 @@ paths:
               - inactive
       responses:
         '200':
-          description: List all exchanges with id and name
+          description: List all exchanges with ID and name
           content:
             application/json:
               schema:
@@ -1583,13 +1583,13 @@ paths:
       description: >-
         This endpoint allows you to **query exchange’s data (name, year
         established, country, .... etc), exchange volume in BTC and top 100
-        tickers based on exchange’s id**
+        tickers based on exchange’s ID**
       operationId: exchanges-id
       parameters:
         - name: id
           in: path
           description: >-
-            exchange id <br> *refers to
+            exchange ID <br> *refers to
             [`/exchanges/list`](/reference/exchanges-list).
           required: true
           schema:
@@ -1609,13 +1609,13 @@ paths:
       summary: Exchange Tickers by ID
       description: >-
         This endpoint allows you to **query exchange's tickers based on
-        exchange’s id**
+        exchange’s ID**
       operationId: exchanges-id-tickers
       parameters:
         - name: id
           in: path
           description: >-
-            exchange id <br> *refers to
+            exchange ID <br> *refers to
             [`/exchanges/list`](/reference/exchanges-list).
           required: true
           schema:
@@ -1624,7 +1624,7 @@ paths:
         - name: coin_ids
           in: query
           description: >-
-            filter tickers by coin_ids, comma-separated if querying more than 1
+            filter tickers by coin IDs, comma-separated if querying more than 1
             coin <br> *refers to [`/coins/list`](/reference/coins-list).
           required: false
           schema:
@@ -1681,13 +1681,13 @@ paths:
       description: >-
         This endpoint allows you to **query the historical volume chart data
         with time in UNIX and trading volume data in BTC based on exchange’s
-        id**
+        ID**
       operationId: exchanges-id-volume-chart
       parameters:
         - name: id
           in: path
           description: >-
-            exchange id or derivatives exchange id <br> *refers to
+            exchange ID or derivatives exchange ID <br> *refers to
             [`/exchanges/list`](/reference/exchanges-list) or
             [`/derivatives/exchanges/list`](/reference/derivatives-exchanges-list).
           required: true
@@ -1726,13 +1726,13 @@ paths:
       summary: 💼 Exchange Volume Chart within Time Range by ID
       description: >-
         This endpoint allows you to **query the historical volume chart data in
-        BTC by specifying date range in UNIX based on exchange’s id**
+        BTC by specifying date range in UNIX based on exchange’s ID**
       operationId: exchanges-id-volume-chart-range
       parameters:
         - name: id
           in: path
           description: >-
-            exchange id or derivative exchange id <br> *refers to
+            exchange ID or derivative exchange ID <br> *refers to
             [`/exchanges/list`](/reference/exchanges-list) or
             [`/derivatives/exchanges/list`](/reference/derivatives-exchanges-list).
           required: true
@@ -1787,7 +1787,7 @@ paths:
       summary: Derivatives Exchanges List with Data
       description: >-
         This endpoint allows you to **query all the derivatives exchanges with
-        related data (id, name, open interest, .... etc) on CoinGecko**
+        related data (ID, name, open interest, .... etc) on CoinGecko**
       operationId: derivatives-exchanges
       parameters:
         - name: order
@@ -1831,13 +1831,13 @@ paths:
       summary: Derivatives Exchange Data by ID
       description: >-
         This endpoint allows you to **query the derivatives exchange’s related
-        data (id, name, open interest, .... etc) based on the exchanges’ id**
+        data (ID, name, open interest, .... etc) based on the exchanges’ ID**
       operationId: derivatives-exchanges-id
       parameters:
         - name: id
           in: path
           description: >-
-            derivative exchange id <br> *refers to
+            derivative exchange ID <br> *refers to
             [`/derivatives/exchanges/list`](/reference/derivatives-exchanges-list).
           required: true
           schema:
@@ -1866,7 +1866,7 @@ paths:
       summary: Derivatives Exchanges List (ID Map)
       description: >-
         This endpoint allows you to **query all the derivatives exchanges with
-        id and name on CoinGecko**
+        ID and name on CoinGecko**
       operationId: derivatives-exchanges-list
       responses:
         '200':
@@ -1881,8 +1881,8 @@ paths:
         - NFTs (Beta)
       summary: NFTs List (ID Map)
       description: >-
-        This endpoint allows you to **query all supported NFTs with id, contract
-        address, name, asset platform id and symbol on CoinGecko**
+        This endpoint allows you to **query all supported NFTs with ID, contract
+        address, name, asset platform ID and symbol on CoinGecko**
       operationId: nfts-list
       parameters:
         - name: order
@@ -1928,12 +1928,12 @@ paths:
       summary: NFTs Collection Data by ID
       description: >-
         This endpoint allows you to **query all the NFT data (name, floor price,
-        24 hr volume....) based on the nft collection id**
+        24 hr volume....) based on the NFT collection ID**
       operationId: nfts-id
       parameters:
         - name: id
           in: path
-          description: NFTs id <br> *refers to [`/nfts/list`](/reference/nfts-list).
+          description: NFTs ID <br> *refers to [`/nfts/list`](/reference/nfts-list).
           required: true
           schema:
             type: string
@@ -1952,14 +1952,14 @@ paths:
       summary: NFTs Collection Data by Contract Address
       description: >-
         This endpoint allows you to **query all the NFT data (name, floor price,
-        24 hr volume....) based on the nft collection contract address and
+        24 hr volume....) based on the NFT collection contract address and
         respective asset platform**
       operationId: nfts-contract-address
       parameters:
         - name: asset_platform_id
           in: path
           description: >-
-            asset platform id <br> *refers to
+            asset platform ID <br> *refers to
             [`/asset_platforms`](/reference/asset-platforms-list)
           required: true
           schema:
@@ -2047,7 +2047,7 @@ paths:
       parameters:
         - name: id
           in: path
-          description: NFTs id <br> *refers to [`/nfts/list`](/reference/nfts-list).
+          description: NFTs ID <br> *refers to [`/nfts/list`](/reference/nfts-list).
           required: true
           schema:
             type: string
@@ -2086,7 +2086,7 @@ paths:
         - name: asset_platform_id
           in: path
           description: >-
-            asset platform id <br> *refers to
+            asset platform ID <br> *refers to
             [`/asset_platforms`](/reference/asset-platforms-list)
           required: true
           schema:
@@ -2094,7 +2094,7 @@ paths:
             example: ethereum
         - name: contract_address
           in: path
-          description: contract address of the nft collection
+          description: contract address of the NFT collection
           required: true
           schema:
             type: string
@@ -2132,7 +2132,7 @@ paths:
       parameters:
         - name: id
           in: path
-          description: NFTs id <br> *refers to [`/nfts/list`](/reference/nfts-list).
+          description: NFTs ID <br> *refers to [`/nfts/list`](/reference/nfts-list).
           required: true
           schema:
             type: string
@@ -2191,7 +2191,7 @@ paths:
         - Trending
       summary: Trending Search List
       description: >-
-        This endpoint allows you **query trending search coins, nfts and
+        This endpoint allows you **query trending search coins, NFTs and
         categories on CoinGecko in the last 24 hours**
       operationId: trending-search
       responses:
@@ -2287,7 +2287,7 @@ paths:
       parameters:
         - name: coin_id
           in: path
-          description: coin id
+          description: coin ID
           required: true
           schema:
             type: string
@@ -2461,7 +2461,7 @@ components:
         properties:
           id:
             type: string
-            description: coin id
+            description: coin ID
           symbol:
             type: string
             description: coin symbol
@@ -2491,7 +2491,7 @@ components:
         properties:
           id:
             type: string
-            description: coin id
+            description: coin ID
           symbol:
             type: string
             description: coin symbol
@@ -2540,7 +2540,7 @@ components:
         properties:
           id:
             type: string
-            description: coin id
+            description: coin ID
           symbol:
             type: string
             description: coin symbol
@@ -2568,7 +2568,7 @@ components:
       properties:
         id:
           type: string
-          description: coin id
+          description: coin ID
         symbol:
           type: string
           description: coin symbol
@@ -2691,7 +2691,7 @@ components:
       properties:
         id:
           type: string
-          description: coin id
+          description: coin ID
         symbol:
           type: string
           description: coin symbol
@@ -2703,7 +2703,7 @@ components:
           description: coin web slug
         asset_platform_id:
           type: string
-          description: coin asset platform id
+          description: coin asset platform ID
         platforms:
           type: object
           description: coin asset platform and contract address
@@ -3283,10 +3283,10 @@ components:
                 description: coin ticker token info url
               coin_id:
                 type: string
-                description: coin ticker base currency coin id
+                description: coin ticker base currency coin ID
               target_coin_id:
                 type: string
-                description: coin ticker target currency coin id
+                description: coin ticker target currency coin ID
     CoinsID:
       allOf:
         - $ref: '#/components/schemas/CoinsDataBase'
@@ -4985,10 +4985,10 @@ components:
                 nullable: true
               coin_id:
                 type: string
-                description: coin ticker base currency coin id
+                description: coin ticker base currency coin ID
               target_coin_id:
                 type: string
-                description: coin ticker target currency coin id
+                description: coin ticker target currency coin ID
       example:
         name: Bitcoin
         tickers:
@@ -5028,7 +5028,7 @@ components:
       properties:
         id:
           type: string
-          description: coin id
+          description: coin ID
         symbol:
           type: string
           description: coin symbol
@@ -7288,10 +7288,10 @@ components:
         properties:
           id:
             type: string
-            description: asset platform id
+            description: asset platform ID
           chain_identifier:
             type: number
-            description: chainlist's chain id
+            description: chainlist's chain ID
             nullable: true
           name:
             type: string
@@ -7301,7 +7301,7 @@ components:
             description: chain shortname
           native_coin_id:
             type: string
-            description: chain native coin id
+            description: chain native coin ID
           image:
             type: object
             description: image of the asset platform
@@ -7346,7 +7346,7 @@ components:
             properties:
               chainId:
                 type: number
-                description: chainlist's chain id
+                description: chainlist's chain ID
               address:
                 type: string
                 description: token contract address
@@ -7389,7 +7389,7 @@ components:
       properties:
         category_id:
           type: string
-          description: category id
+          description: category ID
         name:
           type: string
           description: category name
@@ -7403,7 +7403,7 @@ components:
       properties:
         id:
           type: string
-          description: category id
+          description: category ID
         name:
           type: string
           description: category name
@@ -7418,7 +7418,7 @@ components:
           description: category description
         top_3_coins_id:
           type: array
-          description: ids of top 3 coins in the category
+          description: IDs of top 3 coins in the category
           items:
             type: string
         top_3_coins:
@@ -7456,7 +7456,7 @@ components:
       properties:
         id:
           type: string
-          description: exchange id
+          description: exchange ID
         name:
           type: string
           description: exchange name
@@ -7528,7 +7528,7 @@ components:
       properties:
         id:
           type: string
-          description: exchange id
+          description: exchange ID
         name:
           type: string
           description: exchange name
@@ -7804,7 +7804,7 @@ components:
           description: derivatives exchange name
         id:
           type: string
-          description: derivatives exchange id
+          description: derivatives exchange ID
         open_interest_btc:
           type: number
           description: derivatives exchange open interest in BTC
@@ -7940,7 +7940,7 @@ components:
       properties:
         id:
           type: string
-          description: derivatives exchange id
+          description: derivatives exchange ID
         name:
           type: string
           description: derivatives exchange name
@@ -7956,19 +7956,19 @@ components:
       properties:
         id:
           type: string
-          description: nft collection id
+          description: NFT collection ID
         contract_address:
           type: string
-          description: nft collection contract address
+          description: NFT collection contract address
         name:
           type: string
-          description: nft collection name
+          description: NFT collection name
         asset_platform_id:
           type: string
-          description: nft collection asset platform id
+          description: NFT collection asset platform ID
         symbol:
           type: string
-          description: nft collection symbol
+          description: NFT collection symbol
       example:
         - id: bored-ape-yacht-club
           contract_address: '0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d'
@@ -7985,22 +7985,22 @@ components:
       properties:
         id:
           type: string
-          description: nft collection id
+          description: NFT collection ID
         contract_address:
           type: string
-          description: nft collection contract address
+          description: NFT collection contract address
         asset_platform_id:
           type: string
-          description: nft collection asset platform id
+          description: NFT collection asset platform ID
         name:
           type: string
-          description: nft collection name
+          description: NFT collection name
         symbol:
           type: string
-          description: nft collection symbol
+          description: NFT collection symbol
         image:
           type: object
-          description: nft collection image url
+          description: NFT collection image url
           properties:
             small:
               type: string
@@ -8008,25 +8008,25 @@ components:
               type: string
         banner_image:
           type: object
-          description: nft collection banner image url
+          description: NFT collection banner image url
           properties:
             small:
               type: string
         description:
           type: string
-          description: nft collection description
+          description: NFT collection description
         native_currency:
           type: string
-          description: nft collection native currency
+          description: NFT collection native currency
         native_currency_symbol:
           type: string
-          description: nft collection native currency symbol
+          description: NFT collection native currency symbol
         market_cap_rank:
           type: number
           description: coin market cap rank
         floor_price:
           type: object
-          description: nft collection floor price
+          description: NFT collection floor price
           properties:
             native_currency:
               type: number
@@ -8034,7 +8034,7 @@ components:
               type: number
         market_cap:
           type: object
-          description: nft collection market cap
+          description: NFT collection market cap
           properties:
             native_currency:
               type: number
@@ -8042,7 +8042,7 @@ components:
               type: number
         volume_24h:
           type: object
-          description: nft collection volume in 24 hours
+          description: NFT collection volume in 24 hours
           properties:
             native_currency:
               type: number
@@ -8050,7 +8050,7 @@ components:
               type: number
         floor_price_in_usd_24h_percentage_change:
           type: number
-          description: nft collection floor price in usd 24 hours percentage change
+          description: NFT collection floor price in usd 24 hours percentage change
         floor_price_24h_percentage_change:
           type: object
           properties:
@@ -8060,7 +8060,7 @@ components:
               type: number
         market_cap_24h_percentage_change:
           type: object
-          description: nft collection market cap 24 hours percentage change
+          description: NFT collection market cap 24 hours percentage change
           properties:
             usd:
               type: number
@@ -8068,7 +8068,7 @@ components:
               type: number
         volume_24h_percentage_change:
           type: object
-          description: nft collection volume in 24 hours percentage change
+          description: NFT collection volume in 24 hours percentage change
           properties:
             usd:
               type: number
@@ -8076,31 +8076,31 @@ components:
               type: number
         number_of_unique_addresses:
           type: number
-          description: number of unique address owning the nfts
+          description: number of unique address owning the NFTs
         number_of_unique_addresses_24h_percentage_change:
           type: number
-          description: number of unique address owning the nfts 24 hours percentage change
+          description: number of unique address owning the NFTs 24 hours percentage change
         volume_in_usd_24h_percentage_change:
           type: number
-          description: nft collection volume in usd 24 hours percentage change
+          description: NFT collection volume in usd 24 hours percentage change
         total_supply:
           type: number
-          description: nft collection total supply
+          description: NFT collection total supply
         one_day_sales:
           type: number
-          description: nft collection one day sales
+          description: NFT collection one day sales
         one_day_sales_24h_percentage_change:
           type: number
-          description: nft collection one day sales 24 hours percentage change
+          description: NFT collection one day sales 24 hours percentage change
         one_day_average_sale_price:
           type: number
-          description: nft collection one day average sale price
+          description: NFT collection one day average sale price
         one_day_average_sale_price_24h_percentage_change:
           type: number
-          description: nft collection one day average sale price 24 hours percentage change
+          description: NFT collection one day average sale price 24 hours percentage change
         links:
           type: object
-          description: nft collection links
+          description: NFT collection links
           properties:
             homepage:
               type: string
@@ -8110,7 +8110,7 @@ components:
               type: string
         floor_price_7d_percentage_change:
           type: object
-          description: nft collection floor price 7 days percentage change
+          description: NFT collection floor price 7 days percentage change
           properties:
             usd:
               type: number
@@ -8118,7 +8118,7 @@ components:
               type: number
         floor_price_14d_percentage_change:
           type: object
-          description: nft collection floor price 14 days percentage change
+          description: NFT collection floor price 14 days percentage change
           properties:
             usd:
               type: number
@@ -8126,7 +8126,7 @@ components:
               type: number
         floor_price_30d_percentage_change:
           type: object
-          description: nft collection floor price 30 days percentage change
+          description: NFT collection floor price 30 days percentage change
           properties:
             usd:
               type: number
@@ -8134,7 +8134,7 @@ components:
               type: number
         floor_price_60d_percentage_change:
           type: object
-          description: nft collection floor price 60 days percentage change
+          description: NFT collection floor price 60 days percentage change
           properties:
             usd:
               type: number
@@ -8142,7 +8142,7 @@ components:
               type: number
         floor_price_1y_percentage_change:
           type: object
-          description: nft collection floor price 1 year percentage change
+          description: NFT collection floor price 1 year percentage change
           properties:
             usd:
               type: number
@@ -8150,7 +8150,7 @@ components:
               type: number
         explorers:
           type: array
-          description: nft collection block explorers links
+          description: NFT collection block explorers links
           items:
             type: object
             properties:
@@ -8160,10 +8160,10 @@ components:
                 type: string
         user_favorites_count:
           type: number
-          description: nft collection user favorites count
+          description: NFT collection user favorites count
         ath:
           type: object
-          description: nft collection all time highs
+          description: NFT collection all time highs
           properties:
             native_currency:
               type: number
@@ -8171,7 +8171,7 @@ components:
               type: number
         ath_change_percentage:
           type: object
-          description: nft collection all time highs change percentage
+          description: NFT collection all time highs change percentage
           properties:
             native_currency:
               type: number
@@ -8179,7 +8179,7 @@ components:
               type: number
         ath_date:
           type: object
-          description: nft collection all time highs date
+          description: NFT collection all time highs date
           properties:
             native_currency:
               type: string
@@ -8277,22 +8277,22 @@ components:
         properties:
           id:
             type: string
-            description: nft collection id
+            description: NFT collection ID
           contract_address:
             type: string
-            description: nft collection contract address
+            description: NFT collection contract address
           asset_platform_id:
             type: string
-            description: nft collection asset platform id
+            description: NFT collection asset platform ID
           name:
             type: string
-            description: nft collection name
+            description: NFT collection name
           symbol:
             type: string
-            description: nft collection symbol
+            description: NFT collection symbol
           image:
             type: object
-            description: nft collection image url
+            description: NFT collection image url
             properties:
               small:
                 type: string
@@ -8300,19 +8300,19 @@ components:
                 type: string
           description:
             type: string
-            description: nft collection description
+            description: NFT collection description
           native_currency:
             type: string
-            description: nft collection native currency
+            description: NFT collection native currency
           native_currency_symbol:
             type: string
-            description: nft collection native currency symbol
+            description: NFT collection native currency symbol
           market_cap_rank:
             type: number
             description: coin market cap rank
           floor_price:
             type: object
-            description: nft collection floor price
+            description: NFT collection floor price
             properties:
               native_currency:
                 type: number
@@ -8320,7 +8320,7 @@ components:
                 type: number
           market_cap:
             type: object
-            description: nft collection market cap
+            description: NFT collection market cap
             properties:
               native_currency:
                 type: number
@@ -8328,7 +8328,7 @@ components:
                 type: number
           volume_24h:
             type: object
-            description: nft collection volume in 24 hours
+            description: NFT collection volume in 24 hours
             properties:
               native_currency:
                 type: number
@@ -8336,10 +8336,10 @@ components:
                 type: number
           floor_price_in_usd_24h_percentage_change:
             type: number
-            description: nft collection floor price in usd 24 hours percentage change
+            description: NFT collection floor price in usd 24 hours percentage change
           floor_price_24h_percentage_change:
             type: object
-            description: nft collection floor price 24 hours percentage change
+            description: NFT collection floor price 24 hours percentage change
             properties:
               usd:
                 type: number
@@ -8347,7 +8347,7 @@ components:
                 type: number
           market_cap_24h_percentage_change:
             type: object
-            description: nft collection market cap 24 hours percentage change
+            description: NFT collection market cap 24 hours percentage change
             properties:
               usd:
                 type: number
@@ -8355,7 +8355,7 @@ components:
                 type: number
           volume_24h_percentage_change:
             type: object
-            description: nft collection volume in 24 hours percentage change
+            description: NFT collection volume in 24 hours percentage change
             properties:
               usd:
                 type: number
@@ -8363,31 +8363,31 @@ components:
                 type: number
           number_of_unique_addresses:
             type: number
-            description: number of unique address owning the nfts
+            description: number of unique address owning the NFTs
           number_of_unique_addresses_24h_percentage_change:
             type: number
             description: >-
-              number of unique address owning the nfts 24 hours percentage
+              number of unique address owning the NFTs 24 hours percentage
               change
           volume_in_usd_24h_percentage_change:
             type: number
-            description: nft collection volume in usd 24 hours percentage change
+            description: NFT collection volume in usd 24 hours percentage change
           total_supply:
             type: number
-            description: nft collection total supply
+            description: NFT collection total supply
           one_day_sales:
             type: number
-            description: nft collection one day sales
+            description: NFT collection one day sales
           one_day_sales_24h_percentage_change:
             type: number
-            description: nft collection one day sales 24 hours percentage change
+            description: NFT collection one day sales 24 hours percentage change
           one_day_average_sale_price:
             type: number
-            description: nft collection one day average sale price
+            description: NFT collection one day average sale price
           one_day_average_sale_price_24h_percentage_change:
             type: number
             description: >-
-              nft collection one day average sale price 24 hours percentage
+              NFT collection one day average sale price 24 hours percentage
               change
       example:
         - id: pudgy-penguins
@@ -8439,42 +8439,42 @@ components:
       properties:
         floor_price_usd:
           type: array
-          description: nft collection floor price in usd
+          description: NFT collection floor price in usd
           items:
             type: array
             items:
               type: number
         floor_price_native:
           type: array
-          description: nft collection floor price in native currency
+          description: NFT collection floor price in native currency
           items:
             type: array
             items:
               type: number
         h24_volume_usd:
           type: array
-          description: nft collection volume in 24 hours in usd
+          description: NFT collection volume in 24 hours in usd
           items:
             type: array
             items:
               type: number
         h24_volume_native:
           type: array
-          description: nft collection volume in 24 hours in native currency
+          description: NFT collection volume in 24 hours in native currency
           items:
             type: array
             items:
               type: number
         market_cap_usd:
           type: array
-          description: nft collection market cap in usd
+          description: NFT collection market cap in usd
           items:
             type: array
             items:
               type: number
         market_cap_native:
           type: array
-          description: nft collection market cap in native currency
+          description: NFT collection market cap in native currency
           items:
             type: array
             items:
@@ -8532,31 +8532,31 @@ components:
             properties:
               floor_price_in_native_currency:
                 type: number
-                description: nft collection floor price in native currency
+                description: NFT collection floor price in native currency
               h24_volume_in_native_currency:
                 type: number
-                description: nft collection volume in 24 hours in native currency
+                description: NFT collection volume in 24 hours in native currency
               native_currency:
                 type: string
-                description: nft collection native currency
+                description: NFT collection native currency
               native_currency_symbol:
                 type: string
-                description: nft collection native currency symbol
+                description: NFT collection native currency symbol
               updated_at:
                 type: string
                 description: last updated time
               nft_marketplace_id:
                 type: string
-                description: nft marketplace id
+                description: NFT marketplace ID
               name:
                 type: string
-                description: nft marketplace name
+                description: NFT marketplace name
               image:
                 type: string
-                description: nft marketplace image url
+                description: NFT marketplace image url
               nft_collection_url:
                 type: string
-                description: nft collection url in the nft marketplace
+                description: NFT collection url in the NFT marketplace
       example:
         tickers:
           - floor_price_in_native_currency: 44.21
@@ -8658,7 +8658,7 @@ components:
             properties:
               id:
                 type: string
-                description: coin id
+                description: coin ID
               name:
                 type: string
                 description: coin name
@@ -8684,7 +8684,7 @@ components:
             properties:
               id:
                 type: string
-                description: exchange id
+                description: exchange ID
               name:
                 type: string
                 description: exchange name
@@ -8708,7 +8708,7 @@ components:
             properties:
               id:
                 type: string
-                description: category id
+                description: category ID
               name:
                 type: string
                 description: category name
@@ -8719,16 +8719,16 @@ components:
             properties:
               id:
                 type: string
-                description: nft collection id
+                description: NFT collection ID
               name:
                 type: string
-                description: nft name
+                description: NFT name
               symbol:
                 type: string
-                description: nft collection symbol
+                description: NFT collection symbol
               thumb:
                 type: string
-                description: nft collection thumb image url
+                description: NFT collection thumb image url
       example:
         coins:
           - id: ethereum
@@ -8815,7 +8815,7 @@ components:
             properties:
               id:
                 type: string
-                description: coin id
+                description: coin ID
               coin_id:
                 type: number
               name:
@@ -8886,47 +8886,47 @@ components:
             properties:
               id:
                 type: string
-                description: nft collection id
+                description: NFT collection ID
               name:
                 type: string
-                description: nft collection name
+                description: NFT collection name
               symbol:
                 type: string
-                description: nft collection symbol
+                description: NFT collection symbol
               thumb:
                 type: string
-                description: nft collection thumb image url
+                description: NFT collection thumb image url
               nft_contract_id:
                 type: number
               native_currency_symbol:
                 type: string
-                description: nft collection native currency symbol
+                description: NFT collection native currency symbol
               floor_price_in_native_currency:
                 type: number
-                description: nft collection floor price in native currency
+                description: NFT collection floor price in native currency
               floor_price_24h_percentage_change:
                 type: number
-                description: nft collection floor price 24 hours percentage change
+                description: NFT collection floor price 24 hours percentage change
               data:
                 type: object
                 properties:
                   floor_price:
                     type: string
-                    description: nft collection floor price
+                    description: NFT collection floor price
                   floor_price_in_usd_24h_percentage_change:
                     type: string
                     description: >-
-                      nft collection floor price in usd 24 hours percentage
+                      NFT collection floor price in usd 24 hours percentage
                       change
                   h24_volume:
                     type: string
-                    description: nft collection volume in 24 hours
+                    description: NFT collection volume in 24 hours
                   h24_average_sale_price:
                     type: string
-                    description: nft collection 24 hours average sale price
+                    description: NFT collection 24 hours average sale price
                   sparkline:
                     type: string
-                    description: nft collection sparkline image url
+                    description: NFT collection sparkline image url
                   content:
                     type: string
         categories:
