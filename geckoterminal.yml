@@ -510,6 +510,257 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Pool'
+  /pools/megafilter:
+    get:
+      summary: Megafilter for Pools
+      tags:
+        - Pools
+      description: >-
+        This endpoint allows you to **query pools based on various filters across all networks on GeckoTerminal**
+      operationId: pools-megafilter
+      parameters:
+        - name: include
+          in: query
+          required: false
+          description: >-
+            attributes to include, comma-separated if more than one to include
+            <br> Available values: `base_token`, `quote_token`, `dex`, `network`
+          schema:
+            type: string
+          examples:
+            one value:
+              value: base_token
+            multiple values:
+              value: base_token,quote_token,dex
+        - name: page
+          in: query
+          required: false
+          description: >-
+            page through results <br>
+            Default value: 1
+          schema:
+            type: integer
+            default: 1
+        - name: networks
+          in: query
+          required: false
+          description: >-
+            filter pools by networks, comma-separated if more than one
+          schema:
+            type: string
+        - name: dexes
+          in: query
+          required: false
+          description: >-
+            filter pools by DEXes, comma-separated if more than one
+          schema:
+            type: string
+        - name: sort
+          in: query
+          required: false
+          description: >-
+            sort the pools by field <br>
+            Default value: h6_trending
+          schema:
+            type: string
+            enum:
+              - m5_trending
+              - h1_trending
+              - h6_trending
+              - h24_trending
+              - h24_tx_count_desc
+              - h24_volume_usd_desc
+              - h24_price_change_percentage_desc
+              - pool_created_at_desc
+            default: h6_trending
+        - name: fdv_usd_min
+          in: query
+          required: false
+          description: >-
+            minimum fully diluted value in USD
+          schema:
+            type: number
+        - name: fdv_usd_max
+          in: query
+          required: false
+          description: >-
+            maximum fully diluted value in USD
+          schema:
+            type: number
+        - name: reserve_in_usd_min
+          in: query
+          required: false
+          description: >-
+            minimum reserve in USD
+          schema:
+            type: number
+        - name: reserve_in_usd_max
+          in: query
+          required: false
+          description: >-
+            maximum reserve in USD
+          schema:
+            type: number
+        - name: h24_volume_usd_min
+          in: query
+          required: false
+          description: >-
+            minimum 24hr volume in USD
+          schema:
+            type: number
+        - name: h24_volume_usd_max
+          in: query
+          required: false
+          description: >-
+            maximum 24hr volume in USD
+          schema:
+            type: number
+        - name: pool_created_hour_min
+          in: query
+          required: false
+          description: >-
+            minimum pool age in hours
+          schema:
+            type: number
+        - name: pool_created_hour_max
+          in: query
+          required: false
+          description: >-
+            maximum pool age in hours
+          schema:
+            type: number
+        - name: tx_count_min
+          in: query
+          required: false
+          description: >-
+            minimum transaction count
+          schema:
+            type: integer
+        - name: tx_count_max
+          in: query
+          required: false
+          description: >-
+            maximum transaction count
+          schema:
+            type: integer
+        - name: tx_count_duration
+          in: query
+          required: false
+          description: >-
+            duration for transaction count metric <br>
+            Default value: 24h
+          schema:
+            type: string
+            enum:
+              - 5m
+              - 1h
+              - 6h
+              - 24h
+            default: 24h
+        - name: buys_min
+          in: query
+          required: false
+          description: >-
+            minimum number of buy transactions
+          schema:
+            type: integer
+        - name: buys_max
+          in: query
+          required: false
+          description: >-
+            maximum number of buy transactions
+          schema:
+            type: integer
+        - name: buys_duration
+          in: query
+          required: false
+          description: >-
+            duration for buy transactions metric <br>
+            Default value: 24h
+          schema:
+            type: string
+            enum:
+              - 5m
+              - 1h
+              - 6h
+              - 24h
+            default: 24h
+        - name: sells_min
+          in: query
+          required: false
+          description: >-
+            minimum number of sell transactions
+          schema:
+            type: integer
+        - name: sells_max
+          in: query
+          required: false
+          description: >-
+            maximum number of sell transactions
+          schema:
+            type: integer
+        - name: sells_duration
+          in: query
+          required: false
+          description: >-
+            duration for sell transactions metric <br>
+            Default value: 24h
+          schema:
+            type: string
+            enum:
+              - 5m
+              - 1h
+              - 6h
+              - 24h
+            default: 24h
+        - name: checks
+          in: query
+          required: false
+          description: >-
+            filter options for various checks, comma-separated if more than one <br>
+            Available values: `no_honeypot`, `good_gt_score`, `on_coingecko`, `has_social`
+          schema:
+            type: string
+          examples:
+            one value:
+              value: no_honeypot
+            multiple values:
+              value: no_honeypot,good_gt_score,on_coingecko
+        - name: buy_tax_percentage_min
+          in: query
+          required: false
+          description: >-
+            minimum buy tax percentage
+          schema:
+            type: number
+        - name: buy_tax_percentage_max
+          in: query
+          required: false
+          description: >-
+            maximum buy tax percentage
+          schema:
+            type: number
+        - name: sell_tax_percentage_min
+          in: query
+          required: false
+          description: >-
+            minimum sell tax percentage
+          schema:
+            type: number
+        - name: sell_tax_percentage_max
+          in: query
+          required: false
+          description: >-
+            maximum sell tax percentage
+          schema:
+            type: number
+      responses:
+        '200':
+          description: TODO
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pool'
   /search/pools:
     get:
       summary: Search Pools
