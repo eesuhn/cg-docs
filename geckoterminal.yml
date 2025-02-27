@@ -20,7 +20,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: network id  <br> *refers to [/networks](/reference/networks-list)
+          description: network ID  <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -87,12 +87,12 @@ paths:
         - Dexes
       description: >-
         This endpoint allows you to **query all the supported decentralized
-        exchanges (dexes) based on the provided network on GeckoTerminal**
+        exchanges (DEXs) based on the provided network on GeckoTerminal**
       operationId: dexes-list
       parameters:
         - name: network
           in: path
-          description: network id <br> *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -105,7 +105,7 @@ paths:
             type: integer
       responses:
         '200':
-          description: Get list of supported dexes on a network
+          description: Get list of supported DEXs on a network
           content:
             application/json:
               schema:
@@ -126,7 +126,7 @@ paths:
           description: >-
             attributes to include, comma-separated if more than one to include
             <br> Available values: `base_token`, `quote_token`, `dex`,
-            `network`.  <br> Example: `base_token` or `base_token,dex` 
+            `network`.  <br> Example: `base_token` or `base_token,dex`
           schema:
             type: string
           examples:
@@ -172,7 +172,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: network id <br> *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -228,7 +228,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: network id <br> *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -272,7 +272,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: network id <br> *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -322,7 +322,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: network id <br> *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -371,12 +371,12 @@ paths:
         - Pools
       description: >-
         This endpoint allows you to **query all the top pools based on the
-        provided network and decentralized exchange (dex)**
+        provided network and decentralized exchange (DEX)**
       operationId: top-pools-dex
       parameters:
         - name: network
           in: path
-          description: network id <br> *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -384,7 +384,7 @@ paths:
         - name: dex
           in: path
           description: >-
-            dex id <br> *refers to
+            DEX ID <br> *refers to
             [/networks/{network}/dexes](/reference/dexes-list)
           required: true
           schema:
@@ -422,7 +422,7 @@ paths:
               - h24_volume_usd_desc
       responses:
         '200':
-          description: Get top pools on a network's dex
+          description: Get top pools on a network's DEX
           content:
             application/json:
               schema:
@@ -439,7 +439,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: network id <br> *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -545,14 +545,16 @@ paths:
           in: query
           required: false
           description: >-
-            filter pools by networks, comma-separated if more than one
+            filter pools by networks, comma-separated if more than one  <br>
+            Network ID refers to [/networks](/reference/networks-list)
           schema:
             type: string
         - name: dexes
           in: query
           required: false
           description: >-
-            filter pools by DEXes, comma-separated if more than one
+            filter pools by DEXes, comma-separated if more than one <br>
+            DEX ID refers to [/networks/{network}/dexes](/reference/dexes-list)
           schema:
             type: string
         - name: sort
@@ -777,7 +779,7 @@ paths:
             example: weth
         - name: network
           in: query
-          description: network id <br> *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           schema:
             type: string
             example: eth
@@ -821,7 +823,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: network id <br> *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -885,7 +887,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: 'network id  <br> *refers to [/networks](/reference/networks-list) '
+          description: 'network ID  <br> *refers to [/networks](/reference/networks-list) '
           required: true
           schema:
             type: string
@@ -924,7 +926,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: 'network id  <br> *refers to [/networks](/reference/networks-list) '
+          description: 'network ID  <br> *refers to [/networks](/reference/networks-list) '
           required: true
           schema:
             type: string
@@ -965,13 +967,13 @@ paths:
         - Tokens
       description: >-
         This endpoint allows you to **query specific token info such as
-        name,symbol, coingecko id etc. based on provided token contract address
+        name,symbol, CoinGecko ID etc. based on provided token contract address
         on a network**
       operationId: token-info-contract-address
       parameters:
         - name: network
           in: path
-          description: 'network id  <br> *refers to [/networks](/reference/networks-list) '
+          description: 'network ID  <br> *refers to [/networks](/reference/networks-list) '
           required: true
           schema:
             type: string
@@ -1002,7 +1004,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: 'network id  <br> *refers to [/networks](/reference/networks-list) '
+          description: 'network ID  <br> *refers to [/networks](/reference/networks-list) '
           required: true
           schema:
             type: string
@@ -1045,7 +1047,7 @@ paths:
           in: query
           description: >-
             Filter tokens by provided network  <br> *refers to
-            [/networks](/reference/networks-list) 
+            [/networks](/reference/networks-list)
           required: false
           schema:
             type: string
@@ -1072,7 +1074,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: network id  <br> *refers to [/networks](/reference/networks-list)
+          description: network ID  <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -1165,7 +1167,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: 'network id  <br> *refers to [/networks](/reference/networks-list) '
+          description: 'network ID  <br> *refers to [/networks](/reference/networks-list) '
           required: true
           schema:
             type: string
@@ -1257,13 +1259,13 @@ paths:
         - Categories
       description: >-
         This endpoint allows you to **query all the pools based on the provided
-        category id**
+        category ID**
       operationId: pools-category
       parameters:
         - name: category_id
           in: path
           required: true
-          description: category id
+          description: category ID
           schema:
             type: string
         - name: include
@@ -1272,7 +1274,7 @@ paths:
           description: >-
             attributes to include, comma-separated if more than one to include
             <br> Available values: `base_token`, `quote_token`, `dex`,
-            `network`.  <br> Example: `base_token` or `base_token,dex` 
+            `network`.  <br> Example: `base_token` or `base_token,dex`
           schema:
             type: string
         - name: page
@@ -1298,7 +1300,7 @@ paths:
               - h24_price_change_percentage_desc
       responses:
         '200':
-          description: Get pools by category id
+          description: Get pools by category ID
           content:
             application/json:
               schema:
