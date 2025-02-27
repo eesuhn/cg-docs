@@ -1,10 +1,10 @@
 ---
 title: "Coin Price by IDs"
 slug: "simple-price"
-excerpt: "This endpoint allows you to **query the prices of one or more coins by using their unique Coin API IDs**."
+excerpt: "This endpoint allows you to **query the prices of one or more coins by using their unique Coin API IDs**"
 hidden: false
 createdAt: "Wed Jan 31 2024 03:32:31 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Feb 26 2025 13:27:29 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Feb 27 2025 18:34:25 GMT+0000 (Coordinated Universal Time)"
 ---
 > 👍 **Tips**
 > 

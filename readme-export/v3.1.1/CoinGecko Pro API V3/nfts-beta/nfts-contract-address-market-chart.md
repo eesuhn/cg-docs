@@ -1,10 +1,10 @@
 ---
 title: "💼 NFTs Collection Historical Chart Data by Contract Address"
 slug: "nfts-contract-address-market-chart"
-excerpt: "This endpoint allows you **query historical market data of a NFT collection, including floor price, market cap, and 24hrs volume, by number of days away from now based on the provided contract address**"
+excerpt: "This endpoint allows you **query historical market data of a NFT collection, including floor price, market cap, and 24hr volume, by number of days away from now based on the provided contract address**"
 hidden: false
 createdAt: "Wed Jan 31 2024 03:32:31 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Feb 26 2025 13:48:57 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Feb 27 2025 18:34:36 GMT+0000 (Coordinated Universal Time)"
 ---
 > 📘 **Notes**
 > 

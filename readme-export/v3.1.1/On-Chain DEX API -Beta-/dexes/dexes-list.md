@@ -4,7 +4,7 @@ slug: "dexes-list"
 excerpt: "This endpoint allows you to **query all the supported decentralized exchanges (DEXs) based on the provided network on GeckoTerminal**"
 hidden: false
 createdAt: "Wed Jan 31 2024 03:32:40 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Feb 26 2025 14:00:03 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Feb 27 2025 18:35:13 GMT+0000 (Coordinated Universal Time)"
 ---
 > 👍 **Tips**
 > 

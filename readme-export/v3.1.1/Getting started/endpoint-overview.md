@@ -4,7 +4,7 @@ slug: "endpoint-overview"
 excerpt: ""
 hidden: false
 createdAt: "Mon Jan 15 2024 08:31:29 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Feb 26 2025 11:58:47 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Feb 27 2025 18:49:49 GMT+0000 (Coordinated Universal Time)"
 ---
 > 📘 Notes
 > 
@@ -110,7 +110,8 @@ updatedAt: "Wed Feb 26 2025 11:58:47 GMT+0000 (Coordinated Universal Time)"
 | [/onchain/networks/{network}/pools](/reference/top-pools-network)                                               | Query all the top pools based on the provided network                                                                     |
 | [/onchain/networks/{network}/dexes/{dex}/pools](/reference/top-pools-dex)                                       | Query all the top pools based on the provided network and decentralized exchange (DEX)                                    |
 | [/onchain/networks/{network}/new_pools](/reference/latest-pools-network)                                        | Query all the latest pools based on provided network                                                                      |
-| [/onchain/networks/new_pools](/reference/latest-pools-list)                                                     | Endpoint to query all the latest pools across all networks on GeckoTerminal                                               |
+| [/onchain/networks/new_pools](/reference/latest-pools-list)                                                     | Query all the latest pools across all networks on GeckoTerminal                                                           |
+| [/onchain/pools/megafilter](https://docs.coingecko.com/reference/pools-megafilter)                              | Query pools based on various filters across all networks on GeckoTerminal                                                 |
 | [/onchain/search/pools](/reference/search-pools)                                                                | Search for pools on a network                                                                                             |
 | [/onchain/networks/{network}/tokens/{token_address}/pools](/reference/top-pools-contract-address)               | Query top pools based on the provided token contract address on a network                                                 |
 | [/onchain/networks/{network}/tokens/{address}](/reference/token-data-contract-address)                          | Query specific token data based on the provided token contract address on a network                                       |

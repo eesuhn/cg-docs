@@ -4,7 +4,7 @@ slug: "token-info-contract-address"
 excerpt: "This endpoint allows you to **query specific token info such as name, symbol, CoinGecko ID etc. based on provided token contract address on a network**"
 hidden: false
 createdAt: "Wed Jan 31 2024 03:32:40 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Feb 26 2025 14:02:39 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Feb 27 2025 18:57:06 GMT+0000 (Coordinated Universal Time)"
 ---
 > 👍 **Tips**
 > 

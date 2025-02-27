@@ -1,10 +1,10 @@
 ---
 title: "Coin Historical Chart Data by ID"
 slug: "coins-id-market-chart"
-excerpt: "This endpoint allows you to **get the historical chart data of a coin including time in UNIX, price, market cap and 24hrs volume based on particular coin ID**"
+excerpt: "This endpoint allows you to **get the historical chart data of a coin including time in UNIX, price, market cap and 24hr volume based on particular coin ID**"
 hidden: false
 createdAt: "Sun Feb 04 2024 14:18:21 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Feb 26 2025 13:24:04 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Feb 27 2025 18:35:28 GMT+0000 (Coordinated Universal Time)"
 ---
 > 👍 **Tips**
 > 
