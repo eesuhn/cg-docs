@@ -53,8 +53,8 @@ paths:
         - name: ids
           in: query
           description: >-
-            coins' IDs, comma-separated if querying more than 1 coin.
-            <br>*refers to [`/coins/list`](/reference/coins-list).
+            coins' IDs, comma-separated if querying more than 1 coin. <br>
+            *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -309,7 +309,9 @@ paths:
             example: usd
         - name: duration
           in: query
-          description: 'filter result by time range <br> Default value: `24h`'
+          description: >-
+            filter result by time range <br>
+            Default value: `24h`
           required: false
           schema:
             type: string
@@ -371,8 +373,8 @@ paths:
         - name: vs_currency
           in: query
           description: >-
-            target currency of coins and market data <br> *refers to
-            [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
+            target currency of coins and market data <br>
+            *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
           required: true
           schema:
             type: string
@@ -393,8 +395,8 @@ paths:
         - name: category
           in: query
           description: >-
-            filter based on coins' category <br> *refers to
-            [`/coins/categories/list`](/reference/coins-categories-list).
+            filter based on coins' category <br>
+            *refers to [`/coins/categories/list`](/reference/coins-categories-list).
           required: false
           schema:
             type: string
@@ -414,7 +416,9 @@ paths:
               - id_desc
         - name: per_page
           in: query
-          description: 'total results per page, default: 100 <br> Valid values: 1...250'
+          description: >-
+            total results per page, default: 100 <br>
+            Valid values: 1...250
           required: false
           schema:
             type: number
@@ -434,8 +438,8 @@ paths:
           in: query
           description: >-
             include price change percentage timeframe, comma-separated if query
-            more than 1 price change percentage timeframe <br> Valid values: 1h,
-            24h, 7d, 14d, 30d, 200d, 1y
+            more than 1 price change percentage timeframe <br>
+            Valid values: 1h, 24h, 7d, 14d, 30d, 200d, 1y
           required: false
           schema:
             type: string
@@ -532,7 +536,9 @@ paths:
       parameters:
         - name: id
           in: path
-          description: coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: >-
+            coin ID <br>
+            *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -593,7 +599,9 @@ paths:
       parameters:
         - name: id
           in: path
-          description: coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: >-
+            coin ID <br>
+            *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -601,8 +609,8 @@ paths:
         - name: exchange_ids
           in: query
           description: >-
-            exchange ID <br> *refers to
-            [`/exchanges/list`](/reference/exchanges-list).
+            exchange ID <br>
+            *refers to [`/exchanges/list`](/reference/exchanges-list).
           required: false
           schema:
             type: string
@@ -633,8 +641,8 @@ paths:
         - name: depth
           in: query
           description: >-
-            include 2% orderbook depth, ie. `cost_to_move_up_usd` and
-            `cost_to_move_down_usd` <br> default: false
+            include 2% orderbook depth, ie. `cost_to_move_up_usd` and `cost_to_move_down_usd` <br>
+            Default: false
           required: false
           schema:
             type: boolean
@@ -658,14 +666,18 @@ paths:
       parameters:
         - name: id
           in: path
-          description: coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: >-
+            coin ID <br>
+            *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
             example: bitcoin
         - name: date
           in: query
-          description: 'the date of data snapshot <br> Format: `dd-mm-yyyy`'
+          description: >-
+            the date of data snapshot <br>
+            Format: `dd-mm-yyyy`
           required: true
           schema:
             type: string
@@ -698,7 +710,9 @@ paths:
       parameters:
         - name: id
           in: path
-          description: coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: >-
+            coin ID <br>
+            *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -706,8 +720,8 @@ paths:
         - name: vs_currency
           in: query
           description: >-
-            target currency of market data <br> *refers to
-            [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
+            target currency of market data <br>
+            *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
           required: true
           schema:
             type: string
@@ -715,8 +729,8 @@ paths:
         - name: days
           in: query
           description: >-
-            data up to number of days ago <br> you may use any integer or `max`
-            for number of days
+            data up to number of days ago <br>
+            You may use any integer or `max` for number of days
           required: true
           schema:
             type: string
@@ -784,7 +798,9 @@ paths:
       parameters:
         - name: id
           in: path
-          description: coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: >-
+            coin ID <br>
+            *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -792,8 +808,8 @@ paths:
         - name: vs_currency
           in: query
           description: >-
-            target currency of market data <br> *refers to
-            [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
+            target currency of market data <br>
+            *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
           required: true
           schema:
             type: string
@@ -870,7 +886,9 @@ paths:
       parameters:
         - name: id
           in: path
-          description: coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: >-
+            coin ID <br>
+            *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -878,8 +896,8 @@ paths:
         - name: vs_currency
           in: query
           description: >-
-            target currency of price data <br> *refers to
-            [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
+            target currency of price data <br>
+            *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
           required: true
           schema:
             type: string
@@ -955,7 +973,9 @@ paths:
       parameters:
         - name: id
           in: path
-          description: coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: >-
+            coin ID <br>
+            *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -963,8 +983,8 @@ paths:
         - name: vs_currency
           in: query
           description: >-
-            target currency of price data <br> *refers to
-            [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
+            target currency of price data <br>
+            *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
           required: true
           schema:
             type: string
@@ -1013,8 +1033,8 @@ paths:
         - name: id
           in: path
           description: >-
-            asset platform ID <br> *refers to
-            [`/asset_platforms`](/reference/asset-platforms-list).
+            asset platform ID <br>
+            *refers to [`/asset_platforms`](/reference/asset-platforms-list).
           required: true
           schema:
             type: string
@@ -1047,8 +1067,8 @@ paths:
         - name: id
           in: path
           description: >-
-            asset platform ID <br> *refers to
-            [`/asset_platforms`](/reference/asset-platforms-list).
+            asset platform ID <br>
+            *refers to [`/asset_platforms`](/reference/asset-platforms-list).
           required: true
           schema:
             type: string
@@ -1063,8 +1083,8 @@ paths:
         - name: vs_currency
           in: query
           description: >-
-            target currency of market data <br> *refers to
-            [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
+            target currency of market data <br>
+            *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
           required: true
           schema:
             type: string
@@ -1072,8 +1092,8 @@ paths:
         - name: days
           in: query
           description: >-
-            data up to number of days ago <br> you may use any integer or `max`
-            for number of days
+            data up to number of days ago <br>
+            You may use any integer or `max` for number of days
           required: true
           schema:
             type: string
@@ -1140,8 +1160,8 @@ paths:
         - name: id
           in: path
           description: >-
-            asset platform ID <br> *refers to
-            [`/asset_platforms`](/reference/asset-platforms-list)
+            asset platform ID <br>
+            *refers to [`/asset_platforms`](/reference/asset-platforms-list)
           required: true
           schema:
             type: string
@@ -1156,8 +1176,8 @@ paths:
         - name: vs_currency
           in: query
           description: >-
-            target currency of market data <br> *refers to
-            [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
+            target currency of market data <br>
+            *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
           required: true
           schema:
             type: string
@@ -1232,7 +1252,9 @@ paths:
       parameters:
         - name: id
           in: path
-          description: coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: >-
+            coin ID <br>
+            *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -1287,7 +1309,9 @@ paths:
       parameters:
         - name: id
           in: path
-          description: coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: >-
+            coin ID <br>
+            *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -1333,7 +1357,9 @@ paths:
       parameters:
         - name: id
           in: path
-          description: coin ID <br> *refers to [`/coins/list`](/reference/coins-list).
+          description: >-
+            coin ID <br>
+            *refers to [`/coins/list`](/reference/coins-list).
           required: true
           schema:
             type: string
@@ -1463,8 +1489,8 @@ paths:
         - name: asset_platform_id
           in: path
           description: >-
-            asset platform ID <br> *refers to
-            [`/asset_platforms`](/reference/asset-platforms-list)
+            asset platform ID <br>
+            *refers to [`/asset_platforms`](/reference/asset-platforms-list)
           required: true
           schema:
             type: string
@@ -1535,7 +1561,9 @@ paths:
       parameters:
         - name: per_page
           in: query
-          description: 'total results per page, default: 100 <br> Valid values: 1...250'
+          description: >-
+            total results per page, default: 100 <br>
+            Valid values: 1...250
           required: false
           schema:
             type: number
@@ -1592,8 +1620,8 @@ paths:
         - name: id
           in: path
           description: >-
-            exchange ID <br> *refers to
-            [`/exchanges/list`](/reference/exchanges-list).
+            exchange ID <br>
+            *refers to [`/exchanges/list`](/reference/exchanges-list).
           required: true
           schema:
             type: string
@@ -1618,8 +1646,8 @@ paths:
         - name: id
           in: path
           description: >-
-            exchange ID <br> *refers to
-            [`/exchanges/list`](/reference/exchanges-list).
+            exchange ID <br>
+            *refers to [`/exchanges/list`](/reference/exchanges-list).
           required: true
           schema:
             type: string
@@ -1627,8 +1655,8 @@ paths:
         - name: coin_ids
           in: query
           description: >-
-            filter tickers by coin IDs, comma-separated if querying more than 1
-            coin <br> *refers to [`/coins/list`](/reference/coins-list).
+            filter tickers by coin IDs, comma-separated if querying more than 1 coin <br>
+            *refers to [`/coins/list`](/reference/coins-list).
           required: false
           schema:
             type: string
@@ -1690,8 +1718,8 @@ paths:
         - name: id
           in: path
           description: >-
-            exchange ID or derivatives exchange ID <br> *refers to
-            [`/exchanges/list`](/reference/exchanges-list) or
+            exchange ID or derivative exchange ID <br>
+            *refers to [`/exchanges/list`](/reference/exchanges-list) or
             [`/derivatives/exchanges/list`](/reference/derivatives-exchanges-list).
           required: true
           schema:
@@ -1735,8 +1763,8 @@ paths:
         - name: id
           in: path
           description: >-
-            exchange ID or derivative exchange ID <br> *refers to
-            [`/exchanges/list`](/reference/exchanges-list) or
+            exchange ID or derivative exchange ID <br>
+            *refers to [`/exchanges/list`](/reference/exchanges-list) or
             [`/derivatives/exchanges/list`](/reference/derivatives-exchanges-list).
           required: true
           schema:
@@ -1840,8 +1868,8 @@ paths:
         - name: id
           in: path
           description: >-
-            derivative exchange ID <br> *refers to
-            [`/derivatives/exchanges/list`](/reference/derivatives-exchanges-list).
+            derivative exchange ID <br>
+            *refers to [`/derivatives/exchanges/list`](/reference/derivatives-exchanges-list).
           required: true
           schema:
             type: string
@@ -1907,7 +1935,9 @@ paths:
               - market_cap_usd_desc
         - name: per_page
           in: query
-          description: 'total results per page <br> Valid values: 1...250'
+          description: >-
+            total results per page <br>
+            Valid values: 1...250
           required: false
           schema:
             type: number
@@ -1936,7 +1966,9 @@ paths:
       parameters:
         - name: id
           in: path
-          description: NFTs ID <br> *refers to [`/nfts/list`](/reference/nfts-list).
+          description: >-
+            NFTs ID <br>
+            *refers to [`/nfts/list`](/reference/nfts-list).
           required: true
           schema:
             type: string
@@ -1962,8 +1994,8 @@ paths:
         - name: asset_platform_id
           in: path
           description: >-
-            asset platform ID <br> *refers to
-            [`/asset_platforms`](/reference/asset-platforms-list)
+            asset platform ID <br>
+            *refers to [`/asset_platforms`](/reference/asset-platforms-list)
           required: true
           schema:
             type: string
@@ -2054,7 +2086,9 @@ paths:
       parameters:
         - name: id
           in: path
-          description: NFTs ID <br> *refers to [`/nfts/list`](/reference/nfts-list).
+          description: >-
+            NFTs ID <br>
+            *refers to [`/nfts/list`](/reference/nfts-list).
           required: true
           schema:
             type: string
@@ -2095,8 +2129,8 @@ paths:
         - name: asset_platform_id
           in: path
           description: >-
-            asset platform ID <br> *refers to
-            [`/asset_platforms`](/reference/asset-platforms-list)
+            asset platform ID <br>
+            *refers to [`/asset_platforms`](/reference/asset-platforms-list)
           required: true
           schema:
             type: string
@@ -2110,7 +2144,9 @@ paths:
             example: '0xBd3531dA5CF5857e7CfAA92426877b022e612cf8'
         - name: days
           in: query
-          description: 'data up to number of days ago <br> Valid values: any integer or max '
+          description: >-
+            data up to number of days ago <br>
+            Valid values: any integer or max
           required: true
           schema:
             type: string
@@ -2141,7 +2177,9 @@ paths:
       parameters:
         - name: id
           in: path
-          description: NFTs ID <br> *refers to [`/nfts/list`](/reference/nfts-list).
+          description: >-
+            NFTs ID <br>
+            *refers to [`/nfts/list`](/reference/nfts-list).
           required: true
           schema:
             type: string
@@ -2273,8 +2311,8 @@ paths:
         - name: vs_currency
           in: query
           description: >-
-            target currency of market cap, default: usd <br> *refers to
-            [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies)
+            target currency of market cap, default: usd <br>
+            *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies)
           required: false
           schema:
             type: string
@@ -7501,8 +7539,8 @@ components:
         trade_volume_24h_btc_normalized:
           type: number
           description: >-
-            normalized trading volume by traffic in BTC in 24 hours <br>*refers
-            to [`this blog`](https://blog.coingecko.com/trust-score/).
+            normalized trading volume by traffic in BTC in 24 hours <br>
+            *refers to [`this blog`](https://blog.coingecko.com/trust-score/).
       example:
         - id: bybit_spot
           name: Bybit
@@ -7613,8 +7651,8 @@ components:
         trade_volume_24h_btc_normalized:
           type: number
           description: >-
-            normalized trading volume by traffic in BTC in 24 hours <br>*refers
-            to [`this blog`](https://blog.coingecko.com/trust-score/).
+            normalized trading volume by traffic in BTC in 24 hours <br>
+            *refers to [`this blog`](https://blog.coingecko.com/trust-score/).
         coins:
           type: number
           description: number of coins listed on the exchange
