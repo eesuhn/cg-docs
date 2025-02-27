@@ -545,14 +545,16 @@ paths:
           in: query
           required: false
           description: >-
-            filter pools by networks, comma-separated if more than one
+            filter pools by networks, comma-separated if more than one  <br>
+            Network ID refers to [/networks](/reference/networks-list)
           schema:
             type: string
         - name: dexes
           in: query
           required: false
           description: >-
-            filter pools by DEXes, comma-separated if more than one
+            filter pools by DEXes, comma-separated if more than one <br>
+            DEX ID refers to [/networks/{network}/dexes](/reference/dexes-list)
           schema:
             type: string
         - name: sort
