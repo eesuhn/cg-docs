@@ -1647,6 +1647,8 @@ components:
                     type: string
                   symbol:
                     type: string
+                  decimals:
+                    type: integer
                   image_url:
                     type: string
                   coingecko_coin_id:
@@ -1724,6 +1726,7 @@ components:
               address: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
               name: Wrapped Ether
               symbol: WETH
+              decimals: 18
               image_url: >-
                 https://assets.coingecko.com/coins/images/2518/small/weth.png?1696503332
               coingecko_coin_id: weth
