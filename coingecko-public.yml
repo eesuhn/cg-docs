@@ -49,9 +49,8 @@ paths:
         - name: vs_currencies
           in: query
           description: >-
-            target currency of coins, comma-separated if querying more than 1
-            currency.  <br>*refers to
-            [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
+            target currency of coins, comma-separated if querying more than 1 currency. <br>
+            *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
           required: true
           schema:
             type: string
@@ -130,8 +129,8 @@ paths:
         - name: id
           in: path
           description: >-
-            asset platform's ID  <br>*refers to
-            [`/asset_platforms`](/reference/asset-platforms-list).
+            asset platform's ID <br>
+            *refers to [`/asset_platforms`](/reference/asset-platforms-list).
           required: true
           schema:
             type: string
@@ -148,9 +147,8 @@ paths:
         - name: vs_currencies
           in: query
           description: >-
-            target currency of coins, comma-separated if querying more than 1
-            currency.  <br> *refers to
-            [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
+            target currency of coins, comma-separated if querying more than 1 currency. <br>
+            *refers to [`/simple/supported_vs_currencies`](/reference/simple-supported-currencies).
           required: true
           schema:
             type: string
@@ -173,7 +171,9 @@ paths:
             type: boolean
         - name: include_24hr_change
           in: query
-          description: 'include 24hr change  default: false'
+          description: >-
+            include 24hr change <br>
+            default: false
           required: false
           schema:
             type: boolean
@@ -278,7 +278,7 @@ paths:
         - name: ids
           in: query
           description: >-
-            coins' IDs, comma-separated if querying more than 1 coin.  <br>
+            coins' IDs, comma-separated if querying more than 1 coin. <br>
             *refers to [`/coins/list`](/reference/coins-list).
           required: false
           schema:
@@ -424,7 +424,7 @@ paths:
       summary: Coin Data by ID
       description: >-
         This endpoint allows you to **query all the coin data of a coin (name,
-        price, market .... including exchange tickers) on CoinGecko coin page
+        price, market ... including exchange tickers) on CoinGecko coin page
         based on a particular coin ID**
       operationId: coins-id
       parameters:
@@ -550,7 +550,7 @@ paths:
       summary: Coin Historical Data by ID
       description: >-
         This endpoint allows you to **query the historical data (price, market
-        cap, 24hrs volume, etc) at a given date for a coin based on a particular
+        cap, 24hr volume, etc) at a given date for a coin based on a particular
         coin ID**
       operationId: coins-id-history
       parameters:
@@ -590,7 +590,7 @@ paths:
       summary: Coin Historical Chart Data by ID
       description: >-
         This endpoint allows you to **get the historical chart data of a coin
-        including time in UNIX, price, market cap and 24hrs volume based on
+        including time in UNIX, price, market cap and 24hr volume based on
         particular coin ID**
       operationId: coins-id-market-chart
       parameters:
@@ -663,7 +663,7 @@ paths:
       responses:
         '200':
           description: >-
-            Get historical market data include price, market cap, and 24h volume
+            Get historical market data include price, market cap, and 24hr volume
             (granularity auto)
           content:
             application/json:
@@ -676,7 +676,7 @@ paths:
       summary: Coin Historical Chart Data within Time Range by ID
       description: >-
         This endpoint allows you to **get the historical chart data of a coin
-        within certain time range in UNIX along with price, market cap and 24hrs
+        within certain time range in UNIX along with price, market cap and 24hr
         volume based on particular coin ID**
       operationId: coins-id-market-chart-range
       parameters:
@@ -740,7 +740,7 @@ paths:
       responses:
         '200':
           description: >-
-            Get historical market data include price, market cap, and 24h volume
+            Get historical market data include price, market cap, and 24hr volume
             (granularity auto)
           content:
             application/json:
@@ -827,7 +827,7 @@ paths:
       summary: Coin Data by Token Address
       description: >-
         This endpoint allows you to **query all the coin data (name, price,
-        market .... including exchange tickers) on CoinGecko coin page based on
+        market ... including exchange tickers) on CoinGecko coin page based on
         asset platform and particular token contract address**
       operationId: coins-contract-address
       parameters:
@@ -861,7 +861,7 @@ paths:
       summary: Coin Historical Chart Data by Token Address
       description: >-
         This endpoint allows you to **get the historical chart data including
-        time in UNIX, price, market cap and 24hrs volume based on asset platform
+        time in UNIX, price, market cap and 24hr volume based on asset platform
         and particular token contract address**
       operationId: contract-address-market-chart
       parameters:
@@ -942,7 +942,7 @@ paths:
               - 18
       responses:
         '200':
-          description: Get historical market data include price, market cap, and 24h volume
+          description: Get historical market data include price, market cap, and 24hr volume
           content:
             application/json:
               schema:
@@ -954,8 +954,8 @@ paths:
       summary: Coin Historical Chart Data within Time Range by Token Address
       description: >-
         This endpoint allows you to **get the historical chart data within
-        certain time range in UNIX along with price, market cap and 24hrs
-        volume  based on asset platform and particular token contract address**
+        certain time range in UNIX along with price, market cap and 24hr
+        volume based on asset platform and particular token contract address**
       operationId: contract-address-market-chart-range
       parameters:
         - name: id
@@ -1026,7 +1026,7 @@ paths:
               - 18
       responses:
         '200':
-          description: Get historical market data include price, market cap, and 24h volume
+          description: Get historical market data include price, market cap, and 24hr volume
           content:
             application/json:
               schema:
@@ -1109,7 +1109,7 @@ paths:
       summary: Exchanges List with data
       description: >-
         This endpoint allows you to **query all the supported exchanges with
-        exchanges’ data (ID, name, country, .... etc) that have active trading
+        exchanges’ data (ID, name, country, ...) that have active trading
         volumes on CoinGecko**
       operationId: exchanges
       parameters:
@@ -1165,7 +1165,7 @@ paths:
       summary: Exchange Data by ID
       description: >-
         This endpoint allows you to **query exchange’s data (name, year
-        established, country, .... etc), exchange volume in BTC and top 100
+        established, country, ...), exchange volume in BTC and top 100
         tickers based on exchange’s ID**
       operationId: exchanges-id
       parameters:
@@ -1325,7 +1325,7 @@ paths:
       summary: Derivatives Exchanges List with Data
       description: >-
         This endpoint allows you to **query all the derivatives exchanges with
-        related data (ID, name, open interest, .... etc) on CoinGecko**
+        related data (ID, name, open interest, ...) on CoinGecko**
       operationId: derivatives-exchanges
       parameters:
         - name: order
@@ -1369,7 +1369,7 @@ paths:
       summary: Derivatives Exchange Data by ID
       description: >-
         This endpoint allows you to **query the derivatives exchange’s related
-        data (ID, name, open interest, .... etc) based on the exchanges’ ID**
+        data (ID, name, open interest, ...) based on the exchanges’ ID**
       operationId: derivatives-exchanges-id
       parameters:
         - name: id
@@ -1466,7 +1466,7 @@ paths:
       summary: NFTs Collection Data by ID
       description: >-
         This endpoint allows you to **query all the NFT data (name, floor price,
-        24 hr volume....) based on the NFT collection ID**
+        24hr volume ...) based on the NFT collection ID**
       operationId: nfts-id
       parameters:
         - name: id
@@ -1490,7 +1490,7 @@ paths:
       summary: NFTs Collection Data by Contract Address
       description: >-
         This endpoint allows you to **query all the NFT data (name, floor price,
-        24 hr volume....) based on the NFT collection contract address and
+        24hr volume ...) based on the NFT collection contract address and
         respective asset platform**
       operationId: nfts-contract-address
       parameters:
@@ -1661,10 +1661,10 @@ components:
           description: market cap in USD
         usd_24h_vol:
           type: number
-          description: 24h volume in USD
+          description: 24hr volume in USD
         usd_24h_change:
           type: number
-          description: 24h change in USD
+          description: 24hr change in USD
         last_updated_at:
           type: number
           description: last updated timestamp
@@ -1686,10 +1686,10 @@ components:
           description: market cap in USD
         usd_24h_vol:
           type: number
-          description: 24h volume in USD
+          description: 24hr volume in USD
         usd_24h_change:
           type: number
-          description: 24h change in USD
+          description: 24hr change in USD
         last_updated_at:
           type: number
           description: last updated timestamp
@@ -1829,22 +1829,22 @@ components:
           description: coin total trading volume in currency
         high_24h:
           type: number
-          description: coin 24h price high in currency
+          description: coin 24hr price high in currency
         low_24h:
           type: number
-          description: coin 24h price low in currency
+          description: coin 24hr price low in currency
         price_change_24h:
           type: number
-          description: coin 24h price change in currency
+          description: coin 24hr price change in currency
         price_change_percentage_24h:
           type: number
-          description: coin 24h price change in percentage
+          description: coin 24hr price change in percentage
         market_cap_change_24h:
           type: number
-          description: coin 24h market cap change in currency
+          description: coin 24hr market cap change in currency
         market_cap_change_percentage_24h:
           type: number
-          description: coin 24h market cap change in percentage
+          description: coin 24hr market cap change in percentage
         circulating_supply:
           type: number
           description: coin circulating supply
@@ -2196,7 +2196,7 @@ components:
                   type: number
             high_24h:
               type: object
-              description: coin 24h price high in currency
+              description: coin 24hr price high in currency
               properties:
                 btc:
                   type: number
@@ -2206,7 +2206,7 @@ components:
                   type: number
             low_24h:
               type: object
-              description: coin 24h price low in currency
+              description: coin 24hr price low in currency
               properties:
                 btc:
                   type: number
@@ -2216,10 +2216,10 @@ components:
                   type: number
             price_change_24h:
               type: number
-              description: coin 24h price change in currency
+              description: coin 24hr price change in currency
             price_change_percentage_24h:
               type: number
-              description: coin 24h price change in percentage
+              description: coin 24hr price change in percentage
             price_change_percentage_7d:
               type: number
               description: coin 7d price change in percentage
@@ -2240,10 +2240,10 @@ components:
               description: coin 1y price change in percentage
             market_cap_change_24h:
               type: number
-              description: coin 24h market cap change in currency
+              description: coin 24hr market cap change in currency
             market_cap_change_percentage_24h:
               type: number
-              description: coin 24h market cap change in percentage
+              description: coin 24hr market cap change in percentage
             price_change_percentage_1h_in_currency:
               type: object
               description: coin 1h price change in currency
@@ -2256,7 +2256,7 @@ components:
                   type: number
             price_change_percentage_24h_in_currency:
               type: object
-              description: coin 24h price change in currency
+              description: coin 24hr price change in currency
               properties:
                 btc:
                   type: number
@@ -2326,7 +2326,7 @@ components:
                   type: number
             market_cap_change_24h_in_currency:
               type: object
-              description: coin 24h market cap change in currency
+              description: coin 24hr market cap change in currency
               properties:
                 btc:
                   type: number
@@ -2336,7 +2336,7 @@ components:
                   type: number
             market_cap_change_percentage_24h_in_currency:
               type: object
-              description: coin 24h market cap change in percentage
+              description: coin 24hr market cap change in percentage
               properties:
                 btc:
                   type: number
@@ -4903,7 +4903,7 @@ components:
               lt: USDC
               sl: USDC
             description:
-              en: USDC is a fully collateralized US dollar stablecoin....
+              en: USDC is a fully collateralized US dollar stablecoin ...
               de: USDC is a fully collateralized US dollar stablecoin...
             links:
               homepage:
@@ -6787,6 +6787,8 @@ components:
           description: number of trading pairs on the exchange
         tickers:
           type: array
+          items:
+            type: object
       example:
         name: Binance
         year_established: 2017
