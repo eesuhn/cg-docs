@@ -14,14 +14,13 @@ paths:
       tags:
         - Simple
       description: >-
-        This endpoint allows you to **get token price based on the provided token contract address on a network**
+        This endpoint allows you to **get token price based on the provided
+        token contract address on a network**
       operationId: onchain-simple-price
       parameters:
         - name: network
           in: path
-          description: >-
-            network ID <br>
-            *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -29,7 +28,8 @@ paths:
         - name: addresses
           in: path
           description: >-
-            token contract address, comma-separated if more than one token contract address
+            token contract address, comma-separated if more than one token
+            contract address
           required: true
           schema:
             type: string
@@ -71,9 +71,7 @@ paths:
         - name: page
           in: query
           required: false
-          description: >-
-            page through results <br>
-            Default value: 1
+          description: 'page through results <br> Default value: 1'
           schema:
             type: integer
       responses:
@@ -95,9 +93,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: >-
-            network ID <br>
-            *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -105,9 +101,7 @@ paths:
         - name: page
           in: query
           required: false
-          description: >-
-            page through results <br>
-            Default value: 1
+          description: 'page through results <br> Default value: 1'
           schema:
             type: integer
       responses:
@@ -131,9 +125,9 @@ paths:
           in: query
           required: false
           description: >-
-            attributes to include, comma-separated if more than one to include <br>
-            Available values: `base_token`, `quote_token`, `dex`, `network`. <br>
-            Example: `base_token` or `base_token,dex`
+            attributes to include, comma-separated if more than one to include
+            <br> Available values: `base_token`, `quote_token`, `dex`,
+            `network`. <br> Example: `base_token` or `base_token,dex`
           schema:
             type: string
           examples:
@@ -144,17 +138,13 @@ paths:
         - name: page
           in: query
           required: false
-          description: >-
-            page through results <br>
-            Default value: 1
+          description: 'page through results <br> Default value: 1'
           schema:
             type: integer
         - name: duration
           in: query
           required: false
-          description: >-
-            duration to sort trending list by <br>
-            Default value: 24h
+          description: 'duration to sort trending list by <br> Default value: 24h'
           schema:
             type: integer
             enum:
@@ -181,9 +171,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: >-
-            network ID <br>
-            *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -192,8 +180,8 @@ paths:
           in: query
           required: false
           description: >-
-            attributes to include, comma-separated if more than one to include <br>
-            Available values: `base_token`, `quote_token`, `dex`
+            attributes to include, comma-separated if more than one to include
+            <br> Available values: `base_token`, `quote_token`, `dex`
           schema:
             type: string
           examples:
@@ -204,17 +192,13 @@ paths:
         - name: page
           in: query
           required: false
-          description: >-
-            page through results <br>
-            Default value: 1
+          description: 'page through results <br> Default value: 1'
           schema:
             type: integer
         - name: duration
           in: query
           required: false
-          description: >-
-            duration to sort trending list by <br>
-            Default value: 24h
+          description: 'duration to sort trending list by <br> Default value: 24h'
           schema:
             type: integer
             enum:
@@ -241,9 +225,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: >-
-            network ID <br>
-            *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -259,8 +241,8 @@ paths:
           in: query
           required: false
           description: >-
-            attributes to include, comma-separated if more than one to include <br>
-            Available values: `base_token`, `quote_token`, `dex`
+            attributes to include, comma-separated if more than one to include
+            <br> Available values: `base_token`, `quote_token`, `dex`
           schema:
             type: string
           examples:
@@ -287,9 +269,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: >-
-            network ID <br>
-            *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -297,7 +277,8 @@ paths:
         - name: addresses
           in: path
           description: >-
-            pool contract address, comma-separated if more than one pool contract address
+            pool contract address, comma-separated if more than one pool
+            contract address
           required: true
           schema:
             type: string
@@ -311,8 +292,8 @@ paths:
           in: query
           required: false
           description: >-
-            attributes to include, comma-separated if more than one to include <br>
-            Available values: `base_token`, `quote_token`, `dex`
+            attributes to include, comma-separated if more than one to include
+            <br> Available values: `base_token`, `quote_token`, `dex`
           schema:
             type: string
           examples:
@@ -339,9 +320,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: >-
-            network ID <br>
-            *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -350,8 +329,8 @@ paths:
           in: query
           required: false
           description: >-
-            attributes to include, comma-separated if more than one to include <br>
-            Available values: `base_token`, `quote_token`, `dex`
+            attributes to include, comma-separated if more than one to include
+            <br> Available values: `base_token`, `quote_token`, `dex`
           schema:
             type: string
           examples:
@@ -362,17 +341,13 @@ paths:
         - name: page
           in: query
           required: false
-          description: >-
-            page through results <br>
-            Default value: 1
+          description: 'page through results <br> Default value: 1'
           schema:
             type: integer
         - name: sort
           in: query
           required: false
-          description: >-
-            sort the pools by field <br>
-            Default value: h24_tx_count_desc
+          description: 'sort the pools by field <br> Default value: h24_tx_count_desc'
           schema:
             type: string
             enum:
@@ -397,9 +372,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: >-
-            network ID <br>
-            *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -407,8 +380,8 @@ paths:
         - name: dex
           in: path
           description: >-
-            DEX ID <br>
-            *refers to [/networks/{network}/dexes](/reference/dexes-list)
+            DEX ID <br> *refers to
+            [/networks/{network}/dexes](/reference/dexes-list)
           required: true
           schema:
             type: string
@@ -417,8 +390,8 @@ paths:
           in: query
           required: false
           description: >-
-            attributes to include, comma-separated if more than one to include <br>
-            Available values: `base_token`, `quote_token`, `dex`
+            attributes to include, comma-separated if more than one to include
+            <br> Available values: `base_token`, `quote_token`, `dex`
           schema:
             type: string
           examples:
@@ -429,17 +402,13 @@ paths:
         - name: page
           in: query
           required: false
-          description: >-
-            page through results <br>
-            Default value: 1
+          description: 'page through results <br> Default value: 1'
           schema:
             type: integer
         - name: sort
           in: query
           required: false
-          description: >-
-            sort the pools by field <br>
-            Default value: h24_tx_count_desc
+          description: 'sort the pools by field <br> Default value: h24_tx_count_desc'
           schema:
             type: string
             enum:
@@ -464,9 +433,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: >-
-            network ID <br>
-            *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -475,8 +442,8 @@ paths:
           in: query
           required: false
           description: >-
-            attributes to include, comma-separated if more than one to include <br>
-            Available values: `base_token`, `quote_token`, `dex`
+            attributes to include, comma-separated if more than one to include
+            <br> Available values: `base_token`, `quote_token`, `dex`
           schema:
             type: string
           examples:
@@ -487,9 +454,7 @@ paths:
         - name: page
           in: query
           required: false
-          description: >-
-            page through results <br>
-            Default value: 1
+          description: 'page through results <br> Default value: 1'
           schema:
             type: integer
       responses:
@@ -513,8 +478,8 @@ paths:
           in: query
           required: false
           description: >-
-            attributes to include, comma-separated if more than one to include <br>
-            Available values: `base_token`, `quote_token`, `dex`, `network`
+            attributes to include, comma-separated if more than one to include
+            <br> Available values: `base_token`, `quote_token`, `dex`, `network`
           schema:
             type: string
           examples:
@@ -525,9 +490,7 @@ paths:
         - name: page
           in: query
           required: false
-          description: >-
-            page through results <br>
-            Default value: 1
+          description: 'page through results <br> Default value: 1'
           schema:
             type: integer
       responses:
@@ -543,15 +506,16 @@ paths:
       tags:
         - Pools
       description: >-
-        This endpoint allows you to **query pools based on various filters across all networks on GeckoTerminal**
+        This endpoint allows you to **query pools based on various filters
+        across all networks on GeckoTerminal**
       operationId: pools-megafilter
       parameters:
         - name: include
           in: query
           required: false
           description: >-
-            attributes to include, comma-separated if more than one to include <br>
-            Available values: `base_token`, `quote_token`, `dex`, `network`
+            attributes to include, comma-separated if more than one to include
+            <br> Available values: `base_token`, `quote_token`, `dex`, `network`
           schema:
             type: string
           examples:
@@ -562,9 +526,7 @@ paths:
         - name: page
           in: query
           required: false
-          description: >-
-            page through results <br>
-            Default value: 1
+          description: 'page through results <br> Default value: 1'
           schema:
             type: integer
             default: 1
@@ -580,16 +542,14 @@ paths:
           in: query
           required: false
           description: >-
-            filter pools by DEXes, comma-separated if more than one <br>
-            DEX ID refers to [/networks/{network}/dexes](/reference/dexes-list)
+            filter pools by DEXes, comma-separated if more than one <br> DEX ID
+            refers to [/networks/{network}/dexes](/reference/dexes-list)
           schema:
             type: string
         - name: sort
           in: query
           required: false
-          description: >-
-            sort the pools by field <br>
-            Default value: h6_trending
+          description: 'sort the pools by field <br> Default value: h6_trending'
           schema:
             type: string
             enum:
@@ -605,79 +565,67 @@ paths:
         - name: fdv_usd_min
           in: query
           required: false
-          description: >-
-            minimum fully diluted value in USD
+          description: minimum fully diluted value in USD
           schema:
             type: number
         - name: fdv_usd_max
           in: query
           required: false
-          description: >-
-            maximum fully diluted value in USD
+          description: maximum fully diluted value in USD
           schema:
             type: number
         - name: reserve_in_usd_min
           in: query
           required: false
-          description: >-
-            minimum reserve in USD
+          description: minimum reserve in USD
           schema:
             type: number
         - name: reserve_in_usd_max
           in: query
           required: false
-          description: >-
-            maximum reserve in USD
+          description: maximum reserve in USD
           schema:
             type: number
         - name: h24_volume_usd_min
           in: query
           required: false
-          description: >-
-            minimum 24hr volume in USD
+          description: minimum 24hr volume in USD
           schema:
             type: number
         - name: h24_volume_usd_max
           in: query
           required: false
-          description: >-
-            maximum 24hr volume in USD
+          description: maximum 24hr volume in USD
           schema:
             type: number
         - name: pool_created_hour_min
           in: query
           required: false
-          description: >-
-            minimum pool age in hours
+          description: minimum pool age in hours
           schema:
             type: number
         - name: pool_created_hour_max
           in: query
           required: false
-          description: >-
-            maximum pool age in hours
+          description: maximum pool age in hours
           schema:
             type: number
         - name: tx_count_min
           in: query
           required: false
-          description: >-
-            minimum transaction count
+          description: minimum transaction count
           schema:
             type: integer
         - name: tx_count_max
           in: query
           required: false
-          description: >-
-            maximum transaction count
+          description: maximum transaction count
           schema:
             type: integer
         - name: tx_count_duration
           in: query
           required: false
-          description: >-
-            duration for transaction count metric <br>
-            Default value: 24h
+          description: 'duration for transaction count metric <br> Default value: 24h'
           schema:
             type: string
             enum:
@@ -689,23 +637,19 @@ paths:
         - name: buys_min
           in: query
           required: false
-          description: >-
-            minimum number of buy transactions
+          description: minimum number of buy transactions
           schema:
             type: integer
         - name: buys_max
           in: query
           required: false
-          description: >-
-            maximum number of buy transactions
+          description: maximum number of buy transactions
           schema:
             type: integer
         - name: buys_duration
           in: query
           required: false
-          description: >-
-            duration for buy transactions metric <br>
-            Default value: 24h
+          description: 'duration for buy transactions metric <br> Default value: 24h'
           schema:
             type: string
             enum:
@@ -717,23 +661,19 @@ paths:
         - name: sells_min
           in: query
           required: false
-          description: >-
-            minimum number of sell transactions
+          description: minimum number of sell transactions
           schema:
             type: integer
         - name: sells_max
           in: query
           required: false
-          description: >-
-            maximum number of sell transactions
+          description: maximum number of sell transactions
           schema:
             type: integer
         - name: sells_duration
           in: query
           required: false
-          description: >-
-            duration for sell transactions metric <br>
-            Default value: 24h
+          description: 'duration for sell transactions metric <br> Default value: 24h'
           schema:
             type: string
             enum:
@@ -746,8 +686,9 @@ paths:
           in: query
           required: false
           description: >-
-            filter options for various checks, comma-separated if more than one <br>
-            Available values: `no_honeypot`, `good_gt_score`, `on_coingecko`, `has_social`
+            filter options for various checks, comma-separated if more than one
+            <br> Available values: `no_honeypot`, `good_gt_score`,
+            `on_coingecko`, `has_social`
           schema:
             type: string
           examples:
@@ -758,29 +699,25 @@ paths:
         - name: buy_tax_percentage_min
           in: query
           required: false
-          description: >-
-            minimum buy tax percentage
+          description: minimum buy tax percentage
           schema:
             type: number
         - name: buy_tax_percentage_max
           in: query
           required: false
-          description: >-
-            maximum buy tax percentage
+          description: maximum buy tax percentage
           schema:
             type: number
         - name: sell_tax_percentage_min
           in: query
           required: false
-          description: >-
-            minimum sell tax percentage
+          description: minimum sell tax percentage
           schema:
             type: number
         - name: sell_tax_percentage_max
           in: query
           required: false
-          description: >-
-            maximum sell tax percentage
+          description: maximum sell tax percentage
           schema:
             type: number
       responses:
@@ -806,9 +743,7 @@ paths:
             example: weth
         - name: network
           in: query
-          description: >-
-            network ID <br>
-            *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           schema:
             type: string
             example: eth
@@ -816,8 +751,8 @@ paths:
           in: query
           required: false
           description: >-
-            attributes to include, comma-separated if more than one to include <br>
-            Available values: `base_token`, `quote_token`, `dex`
+            attributes to include, comma-separated if more than one to include
+            <br> Available values: `base_token`, `quote_token`, `dex`
           schema:
             type: string
           examples:
@@ -828,9 +763,7 @@ paths:
         - name: page
           in: query
           required: false
-          description: >-
-            page through results <br>
-            Default value: 1
+          description: 'page through results <br> Default value: 1'
           schema:
             type: integer
       responses:
@@ -852,9 +785,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: >-
-            network ID <br>
-            *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -870,8 +801,8 @@ paths:
           in: query
           required: false
           description: >-
-            attributes to include, comma-separated if more than one to include <br>
-            Available values: `base_token`, `quote_token`, `dex`
+            attributes to include, comma-separated if more than one to include
+            <br> Available values: `base_token`, `quote_token`, `dex`
           schema:
             type: string
           examples:
@@ -882,17 +813,15 @@ paths:
         - name: page
           in: query
           required: false
-          description: >-
-            page through results <br>
-            Default value: 1
+          description: 'page through results <br> Default value: 1'
           schema:
             type: integer
         - name: sort
           in: query
           required: false
           description: >-
-            sort the pools by field <br>
-            Default value: h24_volume_usd_liquidity_desc
+            sort the pools by field <br> Default value:
+            h24_volume_usd_liquidity_desc
           schema:
             type: string
             enum:
@@ -918,9 +847,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: >-
-            network ID <br>
-            *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -959,9 +886,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: >-
-            network ID <br>
-            *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -1001,14 +926,14 @@ paths:
       tags:
         - Tokens
       description: >-
-        This endpoint allows you to **query specific token info such as name, symbol, CoinGecko ID etc. based on provided token contract address on a network**
+        This endpoint allows you to **query specific token info such as name,
+        symbol, CoinGecko ID etc. based on provided token contract address on a
+        network**
       operationId: token-info-contract-address
       parameters:
         - name: network
           in: path
-          description: >-
-            network ID <br>
-            *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -1039,9 +964,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: >-
-            network ID <br>
-            *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -1083,8 +1006,8 @@ paths:
         - name: network
           in: query
           description: >-
-            filter tokens by provided network <br>
-            *refers to [/networks](/reference/networks-list)
+            filter tokens by provided network <br> *refers to
+            [/networks](/reference/networks-list)
           required: false
           schema:
             type: string
@@ -1111,9 +1034,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: >-
-            network ID <br>
-            *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -1139,11 +1060,9 @@ paths:
           in: query
           required: false
           description: >-
-            time period to aggregate each OHLCV <br>
-            Available values (day): `1` <br>
-            Available values (hour): `1` , `4` , `12` <br>
-            Available values (minute): `1` , `5` , `15` <br>
-            Default value: 1
+            time period to aggregate each OHLCV <br> Available values (day): `1`
+            <br> Available values (hour): `1` , `4` , `12` <br> Available values
+            (minute): `1` , `5` , `15` <br> Default value: 1
           schema:
             type: string
         - name: before_timestamp
@@ -1158,16 +1077,14 @@ paths:
           in: query
           required: false
           description: >-
-            number of ohlcv results to return, maximum 1000 <br>
-            Default value: 100
+            number of ohlcv results to return, maximum 1000 <br> Default value:
+            100
           schema:
             type: integer
         - name: currency
           in: query
           required: false
-          description: >-
-            return ohlcv in USD or quote token <br>
-            Default value: usd
+          description: 'return ohlcv in USD or quote token <br> Default value: usd'
           schema:
             type: string
             enum:
@@ -1177,10 +1094,9 @@ paths:
           in: query
           required: false
           description: >-
-            return ohlcv for token <br>
-            use this to invert the chart <br>
-            Available values: 'base', 'quote' or token address <br>
-            Default value: 'base'
+            return ohlcv for token <br> use this to invert the chart <br>
+            Available values: 'base', 'quote' or token address <br> Default
+            value: 'base'
           schema:
             type: string
           examples:
@@ -1211,9 +1127,7 @@ paths:
       parameters:
         - name: network
           in: path
-          description: >-
-            network ID <br>
-            *refers to [/networks](/reference/networks-list)
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
           required: true
           schema:
             type: string
@@ -1237,10 +1151,9 @@ paths:
           in: query
           required: false
           description: >-
-            return trades for token <br>
-            use this to invert the chart <br>
-            Available values: 'base', 'quote' or token address <br>
-            Default value: 'base'
+            return trades for token <br> use this to invert the chart <br>
+            Available values: 'base', 'quote' or token address <br> Default
+            value: 'base'
           schema:
             type: string
           examples:
@@ -1272,17 +1185,15 @@ paths:
         - name: page
           in: query
           required: false
-          description: >-
-            page through results <br>
-            Default value: `1`
+          description: 'page through results <br> Default value: `1`'
           schema:
             type: integer
         - name: sort
           in: query
           required: false
           description: >-
-            sort the categories by field <br>
-            Default value: `h6_volume_percentage_desc`
+            sort the categories by field <br> Default value:
+            `h6_volume_percentage_desc`
           schema:
             type: string
             enum:
@@ -1321,25 +1232,21 @@ paths:
           in: query
           required: false
           description: >-
-            attributes to include, comma-separated if more than one to include <br>
-            Available values: `base_token`, `quote_token`, `dex`, `network`. <br>
-            Example: `base_token` or `base_token,dex`
+            attributes to include, comma-separated if more than one to include
+            <br> Available values: `base_token`, `quote_token`, `dex`,
+            `network`. <br> Example: `base_token` or `base_token,dex`
           schema:
             type: string
         - name: page
           in: query
           required: false
-          description: >-
-            page through results <br>
-            Default value: `1`
+          description: 'page through results <br> Default value: `1`'
           schema:
             type: integer
         - name: sort
           in: query
           required: false
-          description: >-
-            sort the pools by field <br>
-            Default value: `pool_created_at_desc`
+          description: 'sort the pools by field <br> Default value: `pool_created_at_desc`'
           schema:
             type: string
             enum:
