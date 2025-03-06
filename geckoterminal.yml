@@ -51,6 +51,18 @@ paths:
           required: false
           schema:
             type: boolean
+        - name: include_24hr_price_change
+          in: query
+          description: 'include 24hr price change, default: false'
+          required: false
+          schema:
+            type: boolean
+        - name: include_total_reserve_in_usd
+          in: query
+          description: 'include total reserve in USD, default: false'
+          required: false
+          schema:
+            type: boolean
       responses:
         '200':
           description: Get current USD prices of multiple tokens on a network
@@ -502,7 +514,7 @@ paths:
                 $ref: '#/components/schemas/Pool'
   /pools/megafilter:
     get:
-      summary: Megafilter for Pools
+      summary: '🔥 Megafilter for Pools'
       tags:
         - Pools
       description: >-
@@ -1299,11 +1311,15 @@ components:
           type: simple_token_price
           attributes:
             token_prices:
-              '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2': '3399.24368371279'
+              '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2': '2289.33'
             market_cap_usd:
-              '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2': '10005535878.50094'
+              '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2': '6692452895.779648'
             h24_volume_usd:
-              '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2': '2544539948.02599'
+              '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2': '965988358.733808'
+            h24_price_change_percentage:
+              '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2': '3.3870290336'
+            total_reserve_in_usd:
+              '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2': '1576179559.94669772339136684208'
     NetworksList:
       type: object
       properties:
