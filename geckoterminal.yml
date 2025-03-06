@@ -514,7 +514,7 @@ paths:
                 $ref: '#/components/schemas/Pool'
   /pools/megafilter:
     get:
-      summary: Megafilter for Pools
+      summary: '🔥 Megafilter for Pools'
       tags:
         - Pools
       description: >-
