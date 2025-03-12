@@ -1282,7 +1282,7 @@ paths:
     get:
       tags:
         - Coins
-      summary: 👑 Circulating Supply chart within Time Range by ID
+      summary: 👑 Circulating Supply Chart within Time Range by ID
       description: >-
         This endpoint allows you to **query historical circulating supply of a
         coin, within a range of timestamp based on the provided coin ID**
@@ -1383,7 +1383,7 @@ paths:
     get:
       tags:
         - Coins
-      summary: 👑 Total Supply chart within time range by ID
+      summary: 👑 Total Supply Chart within time range by ID
       description: >-
         This endpoint allows you to **query historical total supply of a coin,
         within a range of timestamp based on the provided coin ID**
