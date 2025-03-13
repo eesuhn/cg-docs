@@ -4,7 +4,7 @@ slug: "common-use-cases"
 excerpt: "Discover the common use cases of CoinGecko API by our users"
 hidden: false
 createdAt: "Sun Feb 04 2024 15:44:49 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Feb 26 2025 08:25:56 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Mar 13 2025 05:37:05 GMT+0000 (Coordinated Universal Time)"
 ---
 ## 1. Get Coins Logo Images
 
@@ -53,9 +53,7 @@ updatedAt: "Wed Feb 26 2025 08:25:56 GMT+0000 (Coordinated Universal Time)"
 
   Since Uniswap is a DEX, therefore it shows `"centralized": false`
 
-  [block:html]{"html":"<br>"}[/block]
-
-  ```Text json
+  ```json JSON
   {
     "name": "Uniswap V3 (Ethereum)",
     ......
@@ -73,9 +71,7 @@ updatedAt: "Wed Feb 26 2025 08:25:56 GMT+0000 (Coordinated Universal Time)"
 - Use [/global ](/reference/crypto-global)endpoint.
 - Example of responses:
 
-  [block:html]{"html":"<br>"}[/block]
-
-  ```json json
+  ```json JSON
   {
     "data": {
       "active_cryptocurrencies": 12414,
@@ -140,7 +136,7 @@ updatedAt: "Wed Feb 26 2025 08:25:56 GMT+0000 (Coordinated Universal Time)"
 - Use [/coins/{id}](/reference/coins-id) endpoint by supplying coin ID.
 - Example of responses:
 
-  ```json
+  ```json JSON
   {
     "id": "bitcoin",
     ......
@@ -173,13 +169,13 @@ updatedAt: "Wed Feb 26 2025 08:25:56 GMT+0000 (Coordinated Universal Time)"
 - Use [/coins/{id}](/reference/coins-id) endpoint by supplying coin ID.
 - Example of responses:
 
-```Text JSON
- "total_value_locked":
- {
-    "btc": 72324,
-    "usd": 4591842314
- }
-```
+  ```json JSON
+  "total_value_locked":
+  {
+      "btc": 72324,
+      "usd": 4591842314
+  }
+  ```
 
 <br />
 

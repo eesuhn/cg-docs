@@ -4,11 +4,12 @@ slug: "trending-pools-list"
 excerpt: "This endpoint allows you to **query all the trending pools across all networks on GeckoTerminal**"
 hidden: false
 createdAt: "Wed Jan 31 2024 03:32:40 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Mon Feb 17 2025 15:32:20 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Mar 13 2025 06:09:47 GMT+0000 (Coordinated Universal Time)"
 ---
 > 👍 **Tips**
 > 
 > - You may include values such as `page` to specify which page of responses you would like to show.
+> - For more flexibility in retrieving an exact list of pools that match your specific needs, consider using the [/pools/megafilter](/reference/pools-megafilter) endpoint.
 
 > 📘 **Notes**
 > 
