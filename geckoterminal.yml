@@ -2261,6 +2261,24 @@ components:
                   type: array
                   items:
                     type: string
+                holders:
+                  type: object
+                  properties:
+                    count:
+                      type: integer
+                    distribution_percentage:
+                      type: object
+                      properties:
+                        top_10:
+                          type: number
+                        '11_30':
+                          type: number
+                        '31_50':
+                          type: number
+                        rest:
+                          type: number
+                    last_updated:
+                      type: string
       example:
         data:
           id: eth_0xdac17f958d2ee523a2206206994597c13d831ec7
@@ -2283,6 +2301,14 @@ components:
             twitter_handle: Tether_to
             categories: []
             gt_categories_id: []
+            holders:
+              count: 7041203
+              distribution_percentage:
+                top_10: 45.5782
+                '11_30': 13.4293
+                '31_50': 3.9681
+                rest: 37.0244
+              last_updated: '2025-03-12T05:28:50Z'
     PoolTokensInfo:
       allOf:
         - $ref: '#/components/schemas/TokenInfo'
@@ -2308,6 +2334,14 @@ components:
               twitter_handle: null
               categories: []
               gt_categories_id: []
+              holders:
+                count: 1385496
+                distribution_percentage:
+                  top_10: 55.1184
+                  '11_30': 13.5825
+                  '31_50': 4.7971
+                  rest: 26.502
+                last_updated: '2025-03-12T13:07:47Z'
           - id: eth_0xdac17f958d2ee523a2206206994597c13d831ec7
             type: token
             attributes:
@@ -2328,6 +2362,14 @@ components:
               twitter_handle: Tether_to
               categories: []
               gt_categories_id: []
+              holders:
+                count: 7041203
+                distribution_percentage:
+                  top_10: 45.5782
+                  '11_30': 13.4293
+                  '31_50': 3.9681
+                  rest: 37.0244
+                last_updated: '2025-03-12T05:28:50Z'
     TokenInfoRecentlyUpdated:
       allOf:
         - $ref: '#/components/schemas/TokenInfo'
