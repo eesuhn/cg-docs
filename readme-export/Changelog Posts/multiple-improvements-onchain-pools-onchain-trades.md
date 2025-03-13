@@ -5,7 +5,7 @@ type: "improved"
 createdAt: "Mon Jan 27 2025 10:23:43 GMT+0000 (Coordinated Universal Time)"
 hidden: false
 ---
-## Onchain Pools Data: Supported more than 10 pages of data
+## Onchain Pools Data: Supports more than 10 pages of data
 
 **Previously: ** There was a limitation of a maximum of 10 pages for accessing pools data in the related endpoints.
 
