@@ -1,10 +1,14 @@
 ---
-title: "Megafilter for Pools"
+title: "🔥 Megafilter for Pools"
 slug: "pools-megafilter"
 excerpt: "This endpoint allows you to **query pools based on various filters across all networks on GeckoTerminal**"
 hidden: false
+metadata: 
+  image: 
+    - "https://files.readme.io/3c6f5dd03732b99d18df8d0f68ea29a2c2b287c8595ef110a2db1a2c24872b39-API_-_megafilter.png"
+  robots: "index"
 createdAt: "Thu Feb 27 2025 04:09:16 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Thu Feb 27 2025 18:35:13 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Mar 06 2025 08:37:23 GMT+0000 (Coordinated Universal Time)"
 ---
 > 👍 **Tips**
 > 

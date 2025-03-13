@@ -4,7 +4,7 @@ slug: "authentication"
 excerpt: "Authentication method for CoinGecko Pro API (Paid plan subscribers with Pro-API keys)"
 hidden: false
 createdAt: "Mon Jan 15 2024 08:31:09 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Feb 26 2025 11:47:10 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Sun Mar 09 2025 14:12:26 GMT+0000 (Coordinated Universal Time)"
 ---
 > 📘 **Notes**
 > 
@@ -35,7 +35,7 @@ You can now use the Pro-API key (exclusive to any paid plan subscriber) to call 
 > 📘 **Notes**
 > 
 > - Authentication method for on-chain endpoints is exactly same as other endpoints.
-> - When using the CG Pro API to access on-chain DEX data, include the `/onchain/` endpoint path in the request.
+> - When using the CG Pro API to access on-chain DEX data, include the `/onchain` endpoint path in the request.
 
 | Authentication Method  | Example using [Simple Token Price](/reference/onchain-simple-price) Endpoint                                                                                                  |
 | :--------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
