@@ -1081,7 +1081,7 @@ paths:
           in: query
           required: false
           description: >-
-            return ohlcv data before this timestamp (integer seconds since
+            return OHLCV data before this timestamp (integer seconds since
             epoch)
           schema:
             type: integer
@@ -1089,14 +1089,14 @@ paths:
           in: query
           required: false
           description: >-
-            number of ohlcv results to return, maximum 1000 <br> Default value:
+            number of OHLCV results to return, maximum 1000 <br> Default value:
             100
           schema:
             type: integer
         - name: currency
           in: query
           required: false
-          description: 'return ohlcv in USD or quote token <br> Default value: usd'
+          description: 'return OHLCV in USD or quote token <br> Default value: usd'
           schema:
             type: string
             enum:
@@ -1106,7 +1106,7 @@ paths:
           in: query
           required: false
           description: >-
-            return ohlcv for token <br> use this to invert the chart <br>
+            return OHLCV for token <br> use this to invert the chart <br>
             Available values: 'base', 'quote' or token address <br> Default
             value: 'base'
           schema:
