@@ -33,7 +33,7 @@ Now support the following holder data **(Beta)**:
 
 ## Onchain Token Info endpoints - Locked Liquidity
 
-Now support **locked_liquidity_percentage** data.
+Now support **`locked_liquidity_percentage`** data.
 
 **Improved endpoints:**
 
@@ -67,9 +67,8 @@ Now support **locked_liquidity_percentage** data.
 
 Now support the following data: 
 
-- price_change_percentage: m15, m30
-- volume_usd: m5, m30
-- transactions: h6
+- `volume_usd`: m15, m30
+- `transactions`: h6
 
 **Improved endpoints:**
 
@@ -139,8 +138,8 @@ Now support the following data:
 
 Now supports the following optional parameter to return more data.
 
-- include_24hr_change
-- include_total_reverse_in_usd
+- `include_24hr_change`
+- `include_total_reverse_in_usd`
 
 **Improved Endpoint: **
 

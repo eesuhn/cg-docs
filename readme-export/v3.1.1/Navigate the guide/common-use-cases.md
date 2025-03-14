@@ -4,7 +4,7 @@ slug: "common-use-cases"
 excerpt: "Discover the common use cases of CoinGecko API by our users"
 hidden: false
 createdAt: "Fri Jan 26 2024 06:20:38 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Feb 26 2025 07:51:01 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Mar 13 2025 05:51:48 GMT+0000 (Coordinated Universal Time)"
 ---
 ## 1. Get Coins Logo Images
 
@@ -53,9 +53,7 @@ updatedAt: "Wed Feb 26 2025 07:51:01 GMT+0000 (Coordinated Universal Time)"
 
   Since Uniswap is a DEX, therefore it shows `"centralized": false`
 
-  [block:html]{"html":"<br>"}[/block]
-
-  ```Text json
+  ```json JSON
   {
     "name": "Uniswap V3 (Ethereum)",
     ......
@@ -73,9 +71,7 @@ updatedAt: "Wed Feb 26 2025 07:51:01 GMT+0000 (Coordinated Universal Time)"
 - Use [/global ](/reference/crypto-global)endpoint.
 - Example of responses:
 
-  [block:html]{"html":"<br>"}[/block]
-
-  ```json json
+  ```json JSON
   {
     "data": {
       "active_cryptocurrencies": 12414,
@@ -140,7 +136,7 @@ updatedAt: "Wed Feb 26 2025 07:51:01 GMT+0000 (Coordinated Universal Time)"
 - Use [/coins/{id}](/reference/coins-id) endpoint by supplying coin ID.
 - Example of responses:
 
-  ```json
+  ```json JSON
   {
     "id": "bitcoin",
     ......
@@ -173,13 +169,13 @@ updatedAt: "Wed Feb 26 2025 07:51:01 GMT+0000 (Coordinated Universal Time)"
 - Use [/coins/{id}](/reference/coins-id) endpoint by supplying coin ID.
 - Example of responses:
 
-```Text JSON
- "total_value_locked":
- {
-    "btc": 72324,
-    "usd": 4591842314
- }
-```
+  ```json JSON
+  "total_value_locked":
+  {
+      "btc": 72324,
+      "usd": 4591842314
+  }
+  ```
 
 <br />
 
@@ -212,3 +208,15 @@ You may use the [/asset-platform-list](/reference/asset-platform-list) endpoint 
 There are multiple onchain endpoints that provide the liquidity data (`reserve_in_usd`) of a pool, for example: [Specific Pool Data by Pool Address](https://docs.coingecko.com/reference/pool-address).  You may also get liquidity data (`total_reserve_in_usd`) of a token, using endpoints like: [Token Data by Token Address](https://docs.coingecko.com/reference/token-data-contract-address).
 
 Note: `reserve_in_usd` (pool) represents the total liquidity of all tokens within a specific pool, whereas `total_reserve_in_usd` (token) refers to the total liquidity portion attributable to a specific token across all available pools.
+
+<br />
+
+## 22. Get list of onchain DEX pools based on specific criteria
+
+- Use [/pools/megafilter](/reference/pools-megafilter) to retrieve data for onchain DEX pools that match a given set of filters. 
+- Example of use cases:
+  - Custom filtering: Combine multiple params — like liquidity thresholds, FDV ranges, 24-hour volume, and more — to extract the precise datasets you need.
+  - Risk and Quality checks: Apply fraud filters to weed out risky projects.
+- For more details on examples and available filters, refer to:
+  - [Changelog — New Megafilter Endpoint](https://docs.coingecko.com/changelog/new-megafilter-endpoint) 
+  - [Live Filtering on GeckoTerminal](https://www.geckoterminal.com/)

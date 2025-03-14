@@ -9586,15 +9586,28 @@ components:
                 type: array
                 items:
                   type: number
+            volume:
+              type: array
+              items:
+                type: array
+                items:
+                  type: number
       example:
         market_cap_chart:
           market_cap:
-            - - 1367193600000
-              - 1661441770
-            - - 1367280000000
-              - 1592765051
-            - - 1367366400000
-              - 1378705103
+            - - 1741777205268
+              - 2766533155566
+            - - 1741780800808
+              - 2784800753369
+            - - 1741784401211
+              - 2819864149659
+          volume:
+            - - 1741777205268
+              - 141144791036
+            - - 1741780800808
+              - 140341392201
+            - - 1741784401211
+              - 146221695370
     CompaniesTreasury:
       type: object
       properties:
