@@ -938,9 +938,9 @@ paths:
       tags:
         - Tokens
       description: >-
-        This endpoint allows you to **query specific token info such as name,
-        symbol, CoinGecko ID etc. based on provided token contract address on a
-        network**
+        This endpoint allows you to **query token metadata (name, symbol, 
+        CoinGecko ID, image, socials, websites, description, etc.) based 
+        on a provided token contract address on a network**
       operationId: token-info-contract-address
       parameters:
         - name: network
@@ -970,8 +970,9 @@ paths:
       tags:
         - Tokens
       description: >-
-        This endpoint allows you to **query pool info including base and quote
-        token info based on provided pool contract address on a network**
+        This endpoint allows you to **query pool metadata (base and quote 
+        token details, image, socials, websites, description, contract 
+        address, etc.) based on a provided pool contract address on a network**
       operationId: pool-token-info-contract-address
       parameters:
         - name: network

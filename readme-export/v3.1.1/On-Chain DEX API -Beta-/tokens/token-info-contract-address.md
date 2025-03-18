@@ -4,7 +4,7 @@ slug: "token-info-contract-address"
 excerpt: "This endpoint allows you to **query specific token info such as name, symbol, CoinGecko ID etc. based on provided token contract address on a network**"
 hidden: false
 createdAt: "Wed Jan 31 2024 03:32:40 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Thu Mar 13 2025 10:09:49 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Fri Mar 14 2025 10:46:02 GMT+0000 (Coordinated Universal Time)"
 ---
 > 👍 **Tips**
 > 
@@ -18,7 +18,7 @@ updatedAt: "Thu Mar 13 2025 10:09:49 GMT+0000 (Coordinated Universal Time)"
 > 📘 **Notes**
 > 
 > - `holders` data is currently in Beta, with ongoing improvements to data quality, coverage, and update frequency.
-> - Supported chains include: Solana, EVM (Ethereum, Polygon, BNB, Arbitrum, Optimism, Base), Sui, TON, and Ronin.
-> - `distribution_percentage` coverage:
->   - Solana: `top_10`, `11_20`, `21_40`, `rest`
->   - Other chains: `top_10`, `11_30`, `31_50`, `rest`
+>   - Supported chains include: Solana, EVM (Ethereum, Polygon, BNB, Arbitrum, Optimism, Base), Sui, TON, and Ronin.
+>   - `distribution_percentage` coverage:
+>     - Solana: `top_10`, `11_20`, `21_40`, `rest`
+>     - Other chains: `top_10`, `11_30`, `31_50`, `rest`

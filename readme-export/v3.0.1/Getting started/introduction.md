@@ -8,7 +8,7 @@ metadata:
   image: []
   robots: "index"
 createdAt: "Sat Dec 16 2023 17:27:02 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Feb 26 2025 11:24:33 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Fri Mar 14 2025 10:33:09 GMT+0000 (Coordinated Universal Time)"
 ---
 > ⚠️ Important Note
 > 
@@ -16,9 +16,9 @@ updatedAt: "Wed Feb 26 2025 11:24:33 GMT+0000 (Coordinated Universal Time)"
 > 
 > To access the Pro API Documentation (for [paid plan](https://www.coingecko.com/en/api/pricing) subscribers), please refer to [v3.1.1](/v3.1.1/reference/introduction) instead.
 
-Started in 2014, CoinGecko is the world's largest independent crypto data aggregator that is integrated with more than 1,000 crypto exchanges and lists more than 15,000 coins. CoinGecko API offers the most comprehensive and reliable crypto market data through RESTful JSON endpoints. 
+Started in 2014, CoinGecko is the world's largest independent crypto data aggregator that is integrated with more than 1,000 crypto exchanges and lists more than 17,000 coins. CoinGecko API offers the most comprehensive and reliable crypto market data through RESTful JSON endpoints. 
 
-CoinGecko Pro API now serves **on-chain DEX data** (Beta) across 190+ blockchain networks and 1,300+ decentralized exchanges (DEXes), powered by GeckoTerminal. Try it out for free: [GeckoTerminal Public API](https://www.geckoterminal.com/dex-api?utm_source=api-docs&utm_medium=referral&utm_content=demo-introduction)
+CoinGecko Pro API now serves **on-chain DEX data** (Beta) across 200+ blockchain networks, 1,500+ decentralized exchanges (DEXes), and 6M+ tokens, powered by GeckoTerminal. Try it out for free: [GeckoTerminal Public API](https://www.geckoterminal.com/dex-api?utm_source=api-docs&utm_medium=referral&utm_content=demo-introduction)
 
 Thousands of forward-thinking projects, Web3 developers, researchers, institutions, and enterprises use our API to obtain **price feeds, market data, metadata, and historical data of crypto assets, NFTs, and exchanges**.
 

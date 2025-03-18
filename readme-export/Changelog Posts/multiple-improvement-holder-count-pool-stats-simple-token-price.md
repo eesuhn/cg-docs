@@ -1,11 +1,11 @@
 ---
-title: "Multiple Improvement: Holders, Locked Liquidity, Pool Stats, etc"
+title: "Multiple Improvement: Holders data, Pool Stats, Simple Token Price"
 slug: "multiple-improvement-holder-count-pool-stats-simple-token-price"
 type: "improved"
-createdAt: "Wed Mar 12 2025 07:08:17 GMT+0000 (Coordinated Universal Time)"
-hidden: true
+createdAt: "Fri Mar 14 2025 07:08:00 GMT+0000 (Coordinated Universal Time)"
+hidden: false
 ---
-## Onchain Token Info endpoints - Holders
+## Onchain Token Info endpoints - Holders data
 
 Now support the following holder data **(Beta)**:
 
@@ -14,8 +14,8 @@ Now support the following holder data **(Beta)**:
 
 **Improved endpoints:**
 
-- [Token Data by Token Address](https://docs.coingecko.com/reference/token-data-contract-address)
-- [Tokens Data by Token Addresse](https://docs.coingecko.com/reference/tokens-data-contract-addresses)s
+- [Token Info by Token Address](https://docs.coingecko.com/reference/token-info-contract-address)
+- [Pool Tokens Info by Pool Address](https://docs.coingecko.com/reference/pool-token-info-contract-address)
 
 ```json
     "holders": {
@@ -31,49 +31,18 @@ Now support the following holder data **(Beta)**:
 
 <br />
 
-## Onchain Token Info endpoints - Locked Liquidity
-
-Now support **`locked_liquidity_percentage`** data.
-
-**Improved endpoints:**
-
-- [Specific Pool Data by Pool Address](https://docs.coingecko.com/reference/pool-address)
-- [Multiple Pools Data by Pool Addresses](https://docs.coingecko.com/reference/pools-addresses)
-
-```json
-{
-  "data": [
-    {
-      "id": "eth_0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
-      "type": "pool",
-      "attributes": {
-        "base_token_price_usd": "3653.12491645176",
-        "base_token_price_native_currency": "1.0",
-..
-        "volume_usd": {
-          "m5": "868581.7348314",
-          "h1": "16798158.0138526",
-          "h6": "164054610.850188",
-          "h24": "536545444.904535"
-        },
-        "reserve_in_usd": "163988541.3812",
-        "locked_liquidity_percentage": "99.82"
-      },
-```
-
-<br />
-
 ## Onchain Pool Data endpoints - More Data Support
 
 Now support the following data: 
 
+- `price_change_percentage`: m15, m30
 - `volume_usd`: m15, m30
 - `transactions`: h6
 
 **Improved endpoints:**
 
 - [Specific Pool Data by Pool Address](https://docs.coingecko.com/reference/pool-address)
-- [Multiple Pools Data by Pool Addresse](https://docs.coingecko.com/reference/pools-addresses)s
+- [Multiple Pools Data by Pool Addresses](https://docs.coingecko.com/reference/pools-addresses)
 
 ```json
         "price_change_percentage": {
@@ -134,12 +103,12 @@ Now support the following data:
 
 <br />
 
-## Onchain Simple Token Price endpoint - More Data Support
+## Onchain Simple Token Price endpoint - Liquidity & Price Change Percentage data
 
 Now supports the following optional parameter to return more data.
 
-- `include_24hr_change`
-- `include_total_reverse_in_usd`
+- `include_24hr_price_change` (24hr price change percentage)
+- `include_total_reverse_in_usd` (token liquidity data - total liquidity portion attributable to a specific token across all available pools)
 
 **Improved Endpoint: **
 
