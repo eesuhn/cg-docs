@@ -4,7 +4,7 @@ slug: "pool-token-info-contract-address"
 excerpt: "This endpoint allows you to **query pool info including base and quote token info based on provided pool contract address on a network**"
 hidden: false
 createdAt: "Thu Feb 01 2024 10:17:56 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Thu Mar 13 2025 10:12:33 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Fri Mar 14 2025 10:46:18 GMT+0000 (Coordinated Universal Time)"
 ---
 > 👍 **Tips**
 > 
@@ -18,7 +18,7 @@ updatedAt: "Thu Mar 13 2025 10:12:33 GMT+0000 (Coordinated Universal Time)"
 > 📘 **Notes**
 > 
 > - `holders` data is currently in Beta, with ongoing improvements to data quality, coverage, and update frequency.
-> - Supported chains include: Solana, EVM (Ethereum, Polygon, BNB, Arbitrum, Optimism, Base), Sui, TON, and Ronin.
-> - `distribution_percentage` coverage:
->   - Solana: `top_10`, `11_20`, `21_40`, `rest`
->   - Other chains: `top_10`, `11_30`, `31_50`, `rest`
+>   - Supported chains include: Solana, EVM (Ethereum, Polygon, BNB, Arbitrum, Optimism, Base), Sui, TON, and Ronin.
+>   - `distribution_percentage` coverage:
+>     - Solana: `top_10`, `11_20`, `21_40`, `rest`
+>     - Other chains: `top_10`, `11_30`, `31_50`, `rest`
