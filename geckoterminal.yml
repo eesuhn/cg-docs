@@ -69,7 +69,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/SimplePrice'
+                $ref: '#/components/schemas/OnchainSimplePrice'
   /networks:
     get:
       summary: Supported Networks List (ID Map)
@@ -1223,7 +1223,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/CategoriesList'
+                $ref: '#/components/schemas/OnchainCategoriesList'
   /categories/{category_id}/pools:
     get:
       summary: Pools by Category ID
@@ -1289,7 +1289,7 @@ components:
       in: query
       name: x_cg_pro_api_key
   schemas:
-    SimplePrice:
+    OnchainSimplePrice:
       type: object
       properties:
         data:
@@ -2564,7 +2564,7 @@ components:
               volume_in_usd: '5548.15695745452'
               from_token_address: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
               to_token_address: '0xdac17f958d2ee523a2206206994597c13d831ec7'
-    CategoriesList:
+    OnchainCategoriesList:
       type: object
       properties:
         data:
