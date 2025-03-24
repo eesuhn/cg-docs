@@ -1,10 +1,10 @@
 ---
 title: "Pool Tokens Info by Pool Address"
 slug: "pool-token-info-contract-address"
-excerpt: "This endpoint allows you to **query pool info including base and quote token info based on provided pool contract address on a network**"
+excerpt: "This endpoint allows you to **query pool metadata (base and quote  token details, image, socials, websites, description, contract  address, etc.) based on a provided pool contract address on a network**"
 hidden: false
 createdAt: "Thu Feb 01 2024 10:17:56 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Fri Mar 14 2025 10:46:18 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Tue Mar 18 2025 14:10:56 GMT+0000 (Coordinated Universal Time)"
 ---
 > 👍 **Tips**
 > 

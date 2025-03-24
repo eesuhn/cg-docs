@@ -1,10 +1,10 @@
 ---
 title: "Coin Data by ID"
 slug: "coins-id"
-excerpt: "This endpoint allows you to **query all the coin data of a coin (name, price, market ... including exchange tickers) on CoinGecko coin page based on a particular coin ID**"
+excerpt: "This endpoint allows you to **query all the metadata (image,  websites, socials, description, contract address, etc.) and  market data (price, ATH, exchange tickers, etc.) of a coin  from the CoinGecko coin page based on a particular coin ID**"
 hidden: false
 createdAt: "Wed Jan 31 2024 03:32:31 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Feb 26 2025 13:41:02 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Tue Mar 18 2025 14:10:11 GMT+0000 (Coordinated Universal Time)"
 ---
 > 👍 **Tips**
 > 
