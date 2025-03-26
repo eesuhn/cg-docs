@@ -7,6 +7,9 @@ node: node_modules
 node_modules: package.json
 	bun install
 
+fetch: node
+	@bun run ./script/fetch.js
+
 lint: node
 	@bunx redocly lint --max-problems=200 \
 	--config=$(CONFIG)/redocly.yaml \
@@ -17,4 +20,4 @@ clean:
 
 re: clean all
 
-.PHONY: all lint clean re
+.PHONY: all fetch lint clean re
