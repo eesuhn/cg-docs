@@ -791,6 +791,43 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Pool'
+  /pools/trending_search:
+    get:
+      summary: Trending Search Pools
+      tags:
+        - Pools
+      description: >-
+        This endpoint allows you to **query all the trending search pools across
+        all networks on GeckoTerminal**
+      operationId: trending-search-pools
+      parameters:
+        - name: include
+          in: query
+          required: false
+          description: >-
+            attributes to include, comma-separated if more than one to include
+            <br> Available values: `base_token`, `quote_token`, `dex`, `network`
+          schema:
+            type: string
+          examples:
+            one value:
+              value: base_token
+            multiple values:
+              value: base_token,quote_token,dex,network
+        - name: pools
+          in: query
+          required: false
+          description: >-
+            number of pools to return, maximum 10 <br> Default value: 4
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Get trending search pools across all networks
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TrendingPools'
   /networks/{network}/tokens/{token_address}/pools:
     get:
       summary: Top Pools by Token Address
@@ -1945,6 +1982,54 @@ components:
               image_url: >-
                 https://assets.coingecko.com/coins/images/2518/small/weth.png?1696503332
               coingecko_coin_id: weth
+    TrendingPools:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+              type:
+                type: string
+              attributes:
+                type: object
+                properties:
+                  trending_rank:
+                    type: number
+                  address:
+                    type: string
+                  name:
+                    type: string
+                  pool_created_at:
+                    type: string
+                  fdv_usd:
+                    type: string
+                  market_cap_usd:
+                    type: string
+                  volume_usd:
+                    type: object
+                    properties:
+                      h24:
+                        type: string
+                  reserve_in_usd:
+                    type: string
+      example:
+        data:
+          - id: eth_0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640
+            type: pool
+            attributes:
+              trending_rank: 0
+              address: '0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640'
+              name: WETH / USDC 0.05%
+              pool_created_at: '2021-12-29T12:35:14Z'
+              fdv_usd: '11007041041'
+              market_cap_usd: null
+              volume_usd:
+                h24: '536545444.904535'
+              reserve_in_usd: '163988541.3812'
     Token:
       type: object
       properties:
