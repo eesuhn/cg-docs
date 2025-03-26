@@ -2,9 +2,9 @@ CONFIG = .config
 
 all: node
 
-node: node_modules
+node: node_modules/.bin
 
-node_modules: package.json
+node_modules/.bin: package.json
 	bun install
 
 fetch: node
