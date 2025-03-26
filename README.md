@@ -8,11 +8,19 @@ This repository houses three OpenAPI specifications:
 
 ## Usage
 
-- **Swagger Editor**
-    - Edit locally with [swagger-editor@next](https://github.com/swagger-api/swagger-editor/tree/next) or use the [online editor](https://editor-next.swagger.io/)
-- **Linting**
-    - Run `make lint` to validate all three specs with [`Redocly`](https://redocly.com/docs/cli/commands/lint)
-    - Configure linting rules in [`.config/redocly.yaml`](./.config/redocly.yaml)
+- **Fetch latest specs from ReadMe**
+
+    ```bash
+    make fetch
+    ```
+
+- **Linting with [`Redocly`](https://redocly.com/docs/cli/commands/lint)**
+
+    ```bash
+    make lint
+    ```
+
+    ⚠️ Configure linting rules in [`.config/redocly.yaml`](./.config/redocly.yaml)
 
 ## Structure
 
@@ -20,6 +28,7 @@ This repository houses three OpenAPI specifications:
 .
 ├── .config
 │   └── redocly.yaml      # 👈 Redocly configuration
+├── script                # Helper scripts
 ├── Makefile
 ├── README.md
 ├── coingecko-pro.yml     # CoinGecko Pro API
@@ -30,4 +39,5 @@ This repository houses three OpenAPI specifications:
 
 ## Read More
 
-- [`Redocly` | Rulesets and Configuration](https://redocly.com/docs/cli/rules)
+- Edit OpenAPI specs locally with [swagger-editor@next](https://github.com/swagger-api/swagger-editor/tree/next) or use the [online editor](https://editor-next.swagger.io/)
+- [Redocly | Rulesets and Configuration](https://redocly.com/docs/cli/rules)

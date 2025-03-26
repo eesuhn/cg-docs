@@ -1,10 +1,10 @@
 ---
 title: "Coin Data by Token Address"
 slug: "coins-contract-address"
-excerpt: "This endpoint allows you to **query all the coin data (name, price, market ... including exchange tickers) on CoinGecko coin page based on asset platform and particular token contract address**"
+excerpt: "This endpoint allows you to **query all the metadata (image,  websites, socials, description, contract address, etc.) and  market data (price, ATH, exchange tickers, etc.) of a coin  from the CoinGecko coin page based on an asset platform and  a particular token contract address**"
 hidden: false
 createdAt: "Sun Feb 04 2024 14:18:21 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Feb 26 2025 13:52:21 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Tue Mar 18 2025 14:11:20 GMT+0000 (Coordinated Universal Time)"
 ---
 > 👍 **Tips**
 > 

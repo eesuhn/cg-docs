@@ -2,10 +2,13 @@ CONFIG = .config
 
 all: node
 
-node: node_modules
+node: node_modules/.bin
 
-node_modules: package.json
+node_modules/.bin: package.json
 	bun install
+
+fetch: node
+	@bun run ./script/fetch.js
 
 lint: node
 	@bunx redocly lint --max-problems=200 \
@@ -17,4 +20,4 @@ clean:
 
 re: clean all
 
-.PHONY: all lint clean re
+.PHONY: all fetch lint clean re

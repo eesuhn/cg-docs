@@ -524,10 +524,10 @@ paths:
         - Coins
       summary: Coin Data by ID
       description: >-
-        This endpoint allows you to **query all the metadata (image, 
-        websites, socials, description, contract address, etc.) and 
-        market data (price, ATH, exchange tickers, etc.) of a coin 
-        from the CoinGecko coin page based on a particular coin ID**
+        This endpoint allows you to **query all the metadata (image, websites,
+        socials, description, contract address, etc.) and market data (price,
+        ATH, exchange tickers, etc.) of a coin from the CoinGecko coin page
+        based on a particular coin ID**
       operationId: coins-id
       parameters:
         - name: id
@@ -1005,11 +1005,10 @@ paths:
         - Contract
       summary: Coin Data by Token Address
       description: >-
-        This endpoint allows you to **query all the metadata (image, 
-        websites, socials, description, contract address, etc.) and 
-        market data (price, ATH, exchange tickers, etc.) of a coin 
-        from the CoinGecko coin page based on an asset platform and 
-        a particular token contract address**
+        This endpoint allows you to **query all the metadata (image, websites,
+        socials, description, contract address, etc.) and market data (price,
+        ATH, exchange tickers, etc.) of a coin from the CoinGecko coin page
+        based on an asset platform and a particular token contract address**
       operationId: coins-contract-address
       parameters:
         - name: id
