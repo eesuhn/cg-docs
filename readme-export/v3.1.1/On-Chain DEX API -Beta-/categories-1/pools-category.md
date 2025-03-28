@@ -4,7 +4,7 @@ slug: "pools-category"
 excerpt: "This endpoint allows you to **query all the pools based on the provided category ID**"
 hidden: false
 createdAt: "Tue Dec 24 2024 04:33:21 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Thu Feb 27 2025 18:35:14 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Mar 27 2025 05:16:42 GMT+0000 (Coordinated Universal Time)"
 ---
 > 👍 **Tips**
 > 
@@ -17,5 +17,5 @@ updatedAt: "Thu Feb 27 2025 18:35:14 GMT+0000 (Coordinated Universal Time)"
 > - This endpoint returns up to 20 pools per page. Use the `page` param to navigate more results.
 > - `page`: Pagination beyond 10 pages is available for [Paid Plan](https://www.coingecko.com/en/api/pricing) subscribers (Analyst plan or above).
 > - GeckoTerminal equivalent page example: <https://www.geckoterminal.com/category/pump-fun>
-> - Cache/Update frequency: every 60 seconds.
+> - Cache/Update frequency: every 30 seconds.
 > - Exclusive for all Paid Plan Subscribers (Analyst, Lite, Pro and Enterprise).
