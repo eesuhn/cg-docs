@@ -2361,8 +2361,8 @@ components:
                 '31_50': "3.9681"
                 rest: "37.0244"
               last_updated: '2025-03-12T05:28:50Z'
-            mint_authority: 'null'
-            freeze_authority: 'null'
+            mint_authority: null
+            freeze_authority: null
     PoolTokensInfo:
       allOf:
         - $ref: '#/components/schemas/TokenInfo'
@@ -2397,10 +2397,10 @@ components:
               holders:
                 count: 1385496
                 distribution_percentage:
-                  top_10: 55.1184
-                  '11_30': 13.5825
-                  '31_50': 4.7971
-                  rest: 26.502
+                  top_10: "55.1184"
+                  '11_30': "13.5825"
+                  '31_50': "4.7971"
+                  rest: "26.502"
                 last_updated: '2025-03-12T13:07:47Z'
               mint_authority: null
               freeze_authority: null
@@ -2433,10 +2433,10 @@ components:
               holders:
                 count: 7041203
                 distribution_percentage:
-                  top_10: 45.5782
-                  '11_30': 13.4293
-                  '31_50': 3.9681
-                  rest: 37.0244
+                  top_10: "45.5782"
+                  '11_30': "13.4293"
+                  '31_50': "3.9681"
+                  rest: "37.0244"
                 last_updated: '2025-03-12T05:28:50Z'
               mint_authority: null
               freeze_authority: null
