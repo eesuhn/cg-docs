@@ -1040,6 +1040,50 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/TokenInfoRecentlyUpdated'
+  /networks/{network}/tokens/{address}/top_holders:
+    get:
+      summary: Top Token Holders by Token Address
+      tags:
+        - Tokens
+      description: >-
+        This endpoint allows you to **query top token holders based on the
+        provided token contract address on a network**
+      operationId: top-token-holders-token-address
+      parameters:
+        - name: network
+          in: path
+          description: network ID <br> *refers to [/networks](/reference/networks-list)
+          required: true
+          schema:
+            type: string
+            example: base
+        - name: address
+          in: path
+          description: token contract address
+          required: true
+          schema:
+            type: string
+            example: '0x6921b130d297cc43754afba22e5eac0fbf8db75b'
+        - name: holders
+          in: query
+          description: >-
+            number of top token holders to return, you may use any integer or `max`
+            <br> Default value: 10
+          required: false
+          schema:
+            type: string
+          examples:
+            value-1:
+              value: '1'
+            value-2:
+              value: max
+      responses:
+        '200':
+          description: Get top token holders for a token
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenHolder'
   /networks/{network}/pools/{pool_address}/ohlcv/{timeframe}:
     get:
       summary: Pool OHLCV chart by Pool Address
@@ -2361,8 +2405,59 @@ components:
                 '31_50': "3.9681"
                 rest: "37.0244"
               last_updated: '2025-03-12T05:28:50Z'
-            mint_authority: 'null'
-            freeze_authority: 'null'
+            mint_authority: null
+            freeze_authority: null
+    TokenHolder:
+      type: object
+      properties:
+        data:
+          type: object
+          properties:
+            id:
+              type: string
+            type:
+              type: string
+            attributes:
+              type: object
+              properties:
+                last_updated_at:
+                  type: string
+                holders:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      rank:
+                        type: number
+                      address:
+                        type: string
+                      label:
+                        type: string
+                      amount:
+                        type: string
+                      percentage:
+                        type: string
+                      value:
+                        type: string
+      example:
+        data:
+          id: base_0x6921b130d297cc43754afba22e5eac0fbf8db75b
+          type: top_holder
+          attributes:
+            last_updated_at: '2025-03-26T09:15:26.926Z'
+            holders:
+              - rank: 1
+                address: '0xade9bcd4b968ee26bed102dd43a55f6a8c2416df'
+                label: 'V3 Pool'
+                amount: '3841335481.0'
+                percentage: '5.6808'
+                value: '4898814.26'
+              - rank: 2
+                address: "0x1d9d215c477543d63cfc0be7b214ab94833d3df2"
+                label: null
+                amount: "1901706692.0"
+                percentage: "2.8124"
+                value: "2425226.3"
     PoolTokensInfo:
       allOf:
         - $ref: '#/components/schemas/TokenInfo'
@@ -2397,10 +2492,10 @@ components:
               holders:
                 count: 1385496
                 distribution_percentage:
-                  top_10: 55.1184
-                  '11_30': 13.5825
-                  '31_50': 4.7971
-                  rest: 26.502
+                  top_10: "55.1184"
+                  '11_30': "13.5825"
+                  '31_50': "4.7971"
+                  rest: "26.502"
                 last_updated: '2025-03-12T13:07:47Z'
               mint_authority: null
               freeze_authority: null
@@ -2433,10 +2528,10 @@ components:
               holders:
                 count: 7041203
                 distribution_percentage:
-                  top_10: 45.5782
-                  '11_30': 13.4293
-                  '31_50': 3.9681
-                  rest: 37.0244
+                  top_10: "45.5782"
+                  '11_30': "13.4293"
+                  '31_50': "3.9681"
+                  rest: "37.0244"
                 last_updated: '2025-03-12T05:28:50Z'
               mint_authority: null
               freeze_authority: null
