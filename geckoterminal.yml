@@ -45,6 +45,12 @@ paths:
           required: false
           schema:
             type: boolean
+        - name: mcap_fdv_fallback
+          in: query
+          description: 'return FDV if market cap is not available, default: false'
+          required: false
+          schema:
+            type: boolean
         - name: include_24hr_vol
           in: query
           description: 'include 24hr volume, default: false'
@@ -2270,6 +2276,19 @@ components:
                   type: string
                 gt_score:
                   type: number
+                gt_score_details:
+                  type: object
+                  properties:
+                    pool:
+                      type: number
+                    transaction:
+                      type: number
+                    creation:
+                      type: number
+                    info:
+                      type: number
+                    holders:
+                      type: number
                 discord_url:
                   type: string
                 telegram_handle:
@@ -2302,6 +2321,10 @@ components:
                           type: number
                     last_updated:
                       type: string
+                mint_authority:
+                  type: string
+                freeze_authority:
+                  type: string
       example:
         data:
           id: eth_0xdac17f958d2ee523a2206206994597c13d831ec7
@@ -2319,6 +2342,12 @@ components:
               Tether (USDT) is a cryptocurrency with a value meant to mirror the
               value of the U.S. dollar...
             gt_score: 92.6605504587156
+            gt_score_details:
+              pool: 87.5
+              transaction: 0
+              creation: 100
+              info: 100
+              holders: 0
             discord_url: null
             telegram_handle: null
             twitter_handle: Tether_to
@@ -2327,11 +2356,13 @@ components:
             holders:
               count: 7041203
               distribution_percentage:
-                top_10: 45.5782
-                '11_30': 13.4293
-                '31_50': 3.9681
-                rest: 37.0244
+                top_10: "45.5782"
+                '11_30': "13.4293"
+                '31_50': "3.9681"
+                rest: "37.0244"
               last_updated: '2025-03-12T05:28:50Z'
+            mint_authority: 'null'
+            freeze_authority: 'null'
     PoolTokensInfo:
       allOf:
         - $ref: '#/components/schemas/TokenInfo'
@@ -2352,6 +2383,12 @@ components:
                 WETH is the tokenized/packaged form of ETH that you use to pay
                 for items when you interact with Ethereum dApps...
               gt_score: 92.6605504587156
+              gt_score_details:
+                pool: 87.5
+                transaction: 0
+                creation: 100
+                info: 100
+                holders: 100
               discord_url: null
               telegram_handle: null
               twitter_handle: null
@@ -2365,6 +2402,8 @@ components:
                   '31_50': 4.7971
                   rest: 26.502
                 last_updated: '2025-03-12T13:07:47Z'
+              mint_authority: null
+              freeze_authority: null
           - id: eth_0xdac17f958d2ee523a2206206994597c13d831ec7
             type: token
             attributes:
@@ -2380,6 +2419,12 @@ components:
                 Tether (USDT) is a cryptocurrency with a value meant to mirror
                 the value of the U.S. dollar. ...
               gt_score: 92.6605504587156
+              gt_score_details:
+                pool: 87.5
+                transaction: 0
+                creation: 100
+                info: 100
+                holders: 0
               discord_url: null
               telegram_handle: null
               twitter_handle: Tether_to
@@ -2393,6 +2438,8 @@ components:
                   '31_50': 3.9681
                   rest: 37.0244
                 last_updated: '2025-03-12T05:28:50Z'
+              mint_authority: null
+              freeze_authority: null
     TokenInfoRecentlyUpdated:
       allOf:
         - $ref: '#/components/schemas/TokenInfo'
