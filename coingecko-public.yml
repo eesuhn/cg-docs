@@ -1860,14 +1860,14 @@ components:
           description: coin max supply
         ath:
           type: number
-          description: coin all time high (ath) in currency
+          description: coin all time high (ATH) in currency
         ath_change_percentage:
           type: number
-          description: coin all time high (ath) change in percentage
+          description: coin all time high (ATH) change in percentage
         ath_date:
           type: string
           format: date-time
-          description: coin all time high (ath) date
+          description: coin all time high (ATH) date
         atl:
           type: number
           description: coin all time low (atl) in currency
@@ -2104,7 +2104,7 @@ components:
               description: coin return on investment
             ath:
               type: object
-              description: coin all time high (ath) in currency
+              description: coin all time high (ATH) in currency
               properties:
                 btc:
                   type: number
@@ -2114,7 +2114,7 @@ components:
                   type: number
             ath_change_percentage:
               type: object
-              description: coin all time high (ath) change in percentage
+              description: coin all time high (ATH) change in percentage
               properties:
                 btc:
                   type: number
@@ -2124,7 +2124,7 @@ components:
                   type: number
             ath_date:
               type: object
-              description: coin all time high (ath) date
+              description: coin all time high (ATH) date
               properties:
                 btc:
                   type: string
