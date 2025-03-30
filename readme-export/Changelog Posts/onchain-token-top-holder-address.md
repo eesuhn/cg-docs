@@ -3,11 +3,11 @@ title: "New Endpoint & Multiple Improvements: On-Chain Top Token Holder Address,
 slug: "onchain-token-top-holder-address"
 type: "added"
 createdAt: "Fri Mar 28 2025 08:36:00 GMT+0000 (Coordinated Universal Time)"
-hidden: true
+hidden: false
 ---
 ## [Pro-API Exclusive] New Endpoint  - Top Token Holder Address Data
 
-You can now access the top 50 token holder address data for tokens, as seen on GeckoTerminal.com . 
+You can now access the top 50 token holder address data for tokens, as seen on GeckoTerminal.com. 
 
 [block:image]
 {
@@ -35,7 +35,7 @@ By default, this endpoint returns the top 10 holders data, you can also specify 
 - TON
 - Ronin
 
-👉 Visit the **endpoint reference page - ** to learn more and try it out now!
+👉 Visit the endpoint reference page - [Top Token Holders by Token Address](https://docs.coingecko.com/reference/top-token-holders-token-address) to learn more and try it out now!
 
 **Note:**  this exclusive endpoint is available for our API [paid plan](https://www.coingecko.com/en/api/pricing) subscribers (Analyst plan & above). 
 
@@ -129,13 +129,13 @@ The following Token Info endpoints now provide more security related information
 
 <br />
 
-## Onchain Simple Token Price endpoint - Market Cap & FDV Fallback
+## Onchain Simple Token Price endpoint - Market Cap to FDV Fallback
 
- [Onchain Simple Token Price endpoint now](https://docs.coingecko.com/reference/onchain-simple-price) supports fallback option for Market Cap to return FDV value, when the Market Cap value is not available. 
+The [Onchain Simple Token Price](https://docs.coingecko.com/reference/onchain-simple-price) endpoint now supports fallback option for Market Cap to return FDV value, when the Market Cap value is not available. 
 
 Notes:
 
 - If the token's market cap is not verified by the CoinGecko team, the onchain endpoints will return **null** for its market cap value, even though it has a displayed value on GeckoTerminal, which might not be accurate as it often matches the Fully Diluted Valuation (FDV).
 - Market Cap can be verified by and sourced from CoinGecko, and the number may be higher than FDV as it may include Market Cap of tokens issued on other blockchain network.
 
-If you require the Market Cap to return FDV value (as seen on GeckoTerminal.com) when Market Cap data is unavailable, please specify this parameter `marketcap_fdv_fallback=true`.
+If you require the Market Cap key (`market_cap_usd`) to return FDV value (as seen on GeckoTerminal.com) when Market Cap data is unavailable, please specify this parameter `marketcap_fdv_fallback=true`.

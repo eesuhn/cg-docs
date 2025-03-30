@@ -4,7 +4,7 @@ slug: "endpoint-overview"
 excerpt: ""
 hidden: false
 createdAt: "Tue Jan 02 2024 11:33:58 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Feb 26 2025 12:01:06 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Sun Mar 30 2025 05:06:56 GMT+0000 (Coordinated Universal Time)"
 ---
 > 📘 Notes
 > 
@@ -16,25 +16,25 @@ updatedAt: "Wed Feb 26 2025 12:01:06 GMT+0000 (Coordinated Universal Time)"
 
 ## CoinGecko Endpoints: Coins
 
-| Endpoint                                                                                                     | Description                                                                                                                                                                             |
-| :----------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [/ping](/reference/ping-server)                                                                              | Check the API server status                                                                                                                                                             |
-| [/simple/price](/reference/simple-price)                                                                     | Query the prices of one or more coins by using their unique Coin API IDs                                                                                                                |
-| [/simple/token_price/{id}](/reference/simple-token-price)                                                    | Query the prices of one or more coins by using their unique Coin API IDs                                                                                                                |
-| [/simple/supported_vs_currencies](/reference/simple-supported-currencies)                                    | Query all the supported currencies on CoinGecko                                                                                                                                         |
-| [/coins/list](/reference/coins-list)                                                                         | Query all the supported coins on CoinGecko with coins id, name and symbol                                                                                                               |
-| [/coins/markets](/reference/coins-markets)                                                                   | Query all the supported coins with price, market cap, volume and market related data                                                                                                    |
-| [/coins/{id}](/reference/coins-id)                                                                           | Query all the coin data of a coin (name, price, market ... including exchange tickers) on CoinGecko coin page based on a particular coin ID                                             |
-| [/coins/{id}/tickers](/reference/coins-id-tickers)                                                           | Query the coin tickers on both centralized exchange (CEX) and decentralized exchange (DEX) based on a particular coin ID                                                                |
-| [/coins/{id}/history](/reference/coins-id-history)                                                           | Query the historical data (price, market cap, 24hr volume, ...) at a given date for a coin based on a particular coin ID                                                                |
-| [/coins/{id}/market_chart](/reference/coins-id-market-chart)                                                 | Get the historical chart data of a coin including time in UNIX, price, market cap and 24hr volume based on particular coin ID                                                           |
-| [/coins/{id}/market_chart/range](/reference/coins-id-market-chart-range)                                     | Get the historical chart data of a coin within certain time range in UNIX along with price, market cap and 24hr volume based on particular coin ID                                      |
-| [/coins-id-ohlc](/reference/coins-id-ohlc)                                                                   | Get the OHLC chart (Open, High, Low, Close) of a coin based on particular coin ID                                                                                                       |
-| [/coins/{id}/contract/{contract_address}](/reference/coins-contract-address)                                 | Query all the coin data (name, price, market ... including exchange tickers) on CoinGecko coin page based on asset platform and particular token contract address                       |
-| [/coins/{id}/contract/{contract_address}/market_chart](/reference/contract-address-market-chart)             | Get the historical chart data including time in UNIX, price, market cap and 24hr volume based on asset platform and particular token contract address                                   |
-| [/coins/{id}/contract/{contract_address}/market_chart/range](/reference/contract-address-market-chart-range) | Endpoint to get the historical chart data within certain time range in UNIX along with price, market cap and 24hrs volume based on asset platform and particular token contract address |
-| [/coins/categories/list](/reference/coins-categories-list)                                                   | Query all the coins categories on CoinGecko                                                                                                                                             |
-| [/coins/categories](/reference/coins-categories)                                                             | Query all the coins categories with market data (market cap, volume, ...) on CoinGecko                                                                                                  |
+| Endpoint                                                                                     | Description                                                                                                                                                                             |
+| :------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [/ping](/reference/ping-server)                                                              | Check the API server status                                                                                                                                                             |
+| [/simple/price](/reference/simple-price)                                                     | Query the prices of one or more coins by using their unique Coin API IDs                                                                                                                |
+| [/simple/token_price/{id}](/reference/simple-token-price)                                    | Query the prices of one or more coins by using their unique Coin API IDs                                                                                                                |
+| [/simple/supported_vs_currencies](/reference/simple-supported-currencies)                    | Query all the supported currencies on CoinGecko                                                                                                                                         |
+| [/coins/list](/reference/coins-list)                                                         | Query all the supported coins on CoinGecko with coins ID, name and symbol                                                                                                               |
+| [/coins/markets](/reference/coins-markets)                                                   | Query all the supported coins with price, market cap, volume and market related data                                                                                                    |
+| [/coins/{id}](/reference/coins-id)                                                           | Query all the metadata (image, websites, socials, description, contract address, etc.) from the CoinGecko coin page based on a particular coin ID                                       |
+| [/coins/{id}/tickers](/reference/coins-id-tickers)                                           | Query the coin tickers on both centralized exchange (CEX) and decentralized exchange (DEX) based on a particular coin ID                                                                |
+| [/coins/{id}/history](/reference/coins-id-history)                                           | Query the historical data (price, market cap, 24hr volume, ...) at a given date for a coin based on a particular coin ID                                                                |
+| [/coins/{id}/market_chart](/reference/coins-id-market-chart)                                 | Get the historical chart data of a coin including time in UNIX, price, market cap and 24hr volume based on particular coin ID                                                           |
+| [/coins/{id}/market_chart/range](/reference/coins-id-market-chart-range)                     | Get the historical chart data of a coin within certain time range in UNIX along with price, market cap and 24hr volume based on particular coin ID                                      |
+| [/coins-id-ohlc](/reference/coins-id-ohlc)                                                   | Get the OHLC chart (Open, High, Low, Close) of a coin based on particular coin ID                                                                                                       |
+| [/coins/{id}/contract/{contract_address}](/reference/coins-contract-address)                 | Query all the metadata (image, websites, socials, description, contract address, etc.) from the CoinGecko coin page based on an asset platform and a particular token contract address  |
+| [/coins/{id}/contract/../market_chart](/reference/contract-address-market-chart)             | Get the historical chart data including time in UNIX, price, market cap and 24hr volume based on asset platform and particular token contract address                                   |
+| [/coins/{id}/contract/../market_chart/range](/reference/contract-address-market-chart-range) | Endpoint to get the historical chart data within certain time range in UNIX along with price, market cap and 24hrs volume based on asset platform and particular token contract address |
+| [/coins/categories/list](/reference/coins-categories-list)                                   | Query all the coins categories on CoinGecko                                                                                                                                             |
+| [/coins/categories](/reference/coins-categories)                                             | Query all the coins categories with market data (market cap, volume, ...) on CoinGecko                                                                                                  |
 
 <br />
 
@@ -51,11 +51,11 @@ updatedAt: "Wed Feb 26 2025 12:01:06 GMT+0000 (Coordinated Universal Time)"
 
 ## CoinGecko Endpoints: NFT
 
-| Endpoint                                                                                  | Description                                                                                                                             |
-| :---------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
-| [nfts/list](/reference/nfts-list)                                                         | Query all supported NFTs with id, contract address, name, asset platform ID and symbol on CoinGecko                                     |
-| [/nfts/{id}](/reference/nfts-id)                                                          | Query all the NFT data (name, floor price, 24hr volume, ...) based on the NFT collection ID                                             |
-| [/nfts/{asset_platform_id}/contract/{contract_address}](/reference/nfts-contract-address) | Query all the NFT data (name, floor price, 24hr volume, ...) based on the NFT collection contract address and respective asset platform |
+| Endpoint                                                                            | Description                                                                                                                             |
+| :---------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
+| [nfts/list](/reference/nfts-list)                                                   | Query all supported NFTs with ID, contract address, name, asset platform ID and symbol on CoinGecko                                     |
+| [/nfts/{id}](/reference/nfts-id)                                                    | Query all the NFT data (name, floor price, 24hr volume, ...) based on the NFT collection ID                                             |
+| [/nfts/{asset_platform_id}/../{contract_address}](/reference/nfts-contract-address) | Query all the NFT data (name, floor price, 24hr volume, ...) based on the NFT collection contract address and respective asset platform |
 
 <br />
 
@@ -70,7 +70,7 @@ updatedAt: "Wed Feb 26 2025 12:01:06 GMT+0000 (Coordinated Universal Time)"
 | [/exchanges/{id}/volume_chart](/reference/exchanges-id-volume-chart) | Query the historical volume chart data with time in UNIX and trading volume data in BTC based on exchange’s ID                |
 | [/derivatives](/reference/derivatives-tickers)                       | Query all the tickers from derivatives exchanges on CoinGecko                                                                 |
 | [/derivatives/exchanges](/reference/derivatives-exchanges)           | Query all the derivatives exchanges with related data (ID, name, open interest, ...) on CoinGecko                             |
-| [/derivatives/exchanges/{id}](/reference/derivatives-exchanges-id)   | Query the derivatives exchange’s related data (id, name, open interest, ...) based on the exchanges’ ID                       |
+| [/derivatives/exchanges/{id}](/reference/derivatives-exchanges-id)   | Query the derivatives exchange’s related data (ID, name, open interest, ...) based on the exchanges’ ID                       |
 | [/derivatives/exchanges/list](/reference/derivatives-exchanges-list) | Query all the derivatives exchanges with ID and name on CoinGecko                                                             |
 
 <br />
