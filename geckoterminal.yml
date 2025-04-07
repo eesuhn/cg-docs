@@ -791,6 +791,43 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Pool'
+  /pools/trending_search:
+    get:
+      summary: Trending Search Pools
+      tags:
+        - Pools
+      description: >-
+        This endpoint allows you to **query all the trending search pools across
+        all networks on GeckoTerminal**
+      operationId: trending-search-pools
+      parameters:
+        - name: include
+          in: query
+          required: false
+          description: >-
+            attributes to include, comma-separated if more than one to include
+            <br> Available values: `base_token`, `quote_token`, `dex`, `network`
+          schema:
+            type: string
+          examples:
+            one value:
+              value: base_token
+            multiple values:
+              value: base_token,quote_token,dex,network
+        - name: pools
+          in: query
+          required: false
+          description: >-
+            number of pools to return, maximum 10 <br> Default value: 4
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Get trending search pools across all networks
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TrendingPools'
   /networks/{network}/tokens/{token_address}/pools:
     get:
       summary: Top Pools by Token Address
@@ -1860,16 +1897,6 @@ components:
                             type: string
                           type:
                             type: string
-                  network:
-                    type: object
-                    properties:
-                      data:
-                        type: object
-                        properties:
-                          id:
-                            type: string
-                          type:
-                            type: string
                   dex:
                     type: object
                     properties:
@@ -1978,6 +2005,149 @@ components:
                 data:
                   id: uniswap_v3
                   type: dex
+        included:
+          - id: eth_0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
+            type: token
+            attributes:
+              address: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
+              name: Wrapped Ether
+              symbol: WETH
+              decimals: 18
+              image_url: >-
+                https://assets.coingecko.com/coins/images/2518/small/weth.png?1696503332
+              coingecko_coin_id: weth
+    TrendingPools:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+              type:
+                type: string
+              attributes:
+                type: object
+                properties:
+                  trending_rank:
+                    type: number
+                  address:
+                    type: string
+                  name:
+                    type: string
+                  pool_created_at:
+                    type: string
+                  fdv_usd:
+                    type: string
+                  market_cap_usd:
+                    type: string
+                  volume_usd:
+                    type: object
+                    properties:
+                      h24:
+                        type: string
+                  reserve_in_usd:
+                    type: string
+              relationships:
+                type: object
+                properties:
+                  network:
+                    type: object
+                    properties:
+                      data:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                          type:
+                            type: string
+                  dex:
+                    type: object
+                    properties:
+                      data:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                          type:
+                            type: string
+                  base_token:
+                    type: object
+                    properties:
+                      data:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                          type:
+                            type: string
+                  quote_token:
+                    type: object
+                    properties:
+                      data:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                          type:
+                            type: string
+        included:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+              type:
+                type: string
+              attributes:
+                type: object
+                properties:
+                  address:
+                    type: string
+                  name:
+                    type: string
+                  symbol:
+                    type: string
+                  decimals:
+                    type: integer
+                  image_url:
+                    type: string
+                  coingecko_coin_id:
+                    type: string
+      example:
+        data:
+          - id: eth_0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640
+            type: pool
+            attributes:
+              trending_rank: 0
+              address: '0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640'
+              name: WETH / USDC 0.05%
+              pool_created_at: '2021-12-29T12:35:14Z'
+              fdv_usd: '11007041041'
+              market_cap_usd: null
+              volume_usd:
+                h24: '536545444.904535'
+              reserve_in_usd: '163988541.3812'
+            relationships:
+              network:
+                data:
+                  id: eth
+                  type: network
+              dex:
+                data:
+                  id: uniswap_v3
+                  type: dex
+              base_token:
+                data:
+                  id: eth_0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
+                  type: token
+              quote_token:
+                data:
+                  id: eth_0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48
+                  type: token
         included:
           - id: eth_0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
             type: token
