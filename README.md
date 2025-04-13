@@ -1,5 +1,8 @@
 # `cg-docs` — CoinGecko OpenAPI Docs
 
+> [!WARNING]
+> This repository is **deprecated** due to the NEW [ReadMe Refactored](https://blog.readme.com/readme-refactored-new-editing-experience-bi-directional-syncing-with-github-2/)
+
 This repository houses three OpenAPI specifications:
 
 1. [CoinGecko Pro API](https://docs.coingecko.com/openapi/6584ea6ce07e130056b1af99) (`coingecko-pro.yml`)

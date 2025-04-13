@@ -1,10 +1,13 @@
 import { promises as fs } from 'fs';
 import { dump } from 'js-yaml';
 
+const BASE_URL =
+  'https://raw.githubusercontent.com/cg-eesuhn/docs-coingecko/refs/heads';
+
 const apiMap = {
-  '6584ea6ce07e130056b1af99': 'coingecko-pro.yml',
-  '65bf9cabb0951b0072e2cade': 'coingecko-public.yml',
-  '6585013ec2907b0031346aa4': 'geckoterminal.yml'
+  'v3.1.1/reference/coingecko-pro-api-v3': 'coingecko-pro.yml',
+  'v3.0.1/reference/coingecko-public-api-v3': 'coingecko-public.yml',
+  'v3.1.1/reference/on-chain-dex-api-beta': 'geckoterminal.yml'
 };
 
 async function fetchAndConvert(url, outputFile) {
@@ -18,13 +21,11 @@ async function fetchAndConvert(url, outputFile) {
   console.log(`Updated ${outputFile}`);
 }
 
-const BASE_URL = 'https://docs.coingecko.com/openapi/';
-
 (async () => {
   try {
     for (const [apiId, outputFile] of Object.entries(apiMap)) {
       await fetchAndConvert(
-        `${BASE_URL}${apiId}`,
+        `${BASE_URL}/${apiId}.json`,
         outputFile
       );
     }

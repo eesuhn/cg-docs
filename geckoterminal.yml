@@ -817,8 +817,7 @@ paths:
         - name: pools
           in: query
           required: false
-          description: >-
-            number of pools to return, maximum 10 <br> Default value: 4
+          description: 'number of pools to return, maximum 10 <br> Default value: 4'
           schema:
             type: integer
       responses:
